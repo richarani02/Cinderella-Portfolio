@@ -1,0 +1,114 @@
+/* ============================================================
+   CINDERELLA DESIGN TOKENS
+   "From Code to Magic" — Richa Rani Portfolio
+   ============================================================ */
+
+:root {
+  /* ─── COLOUR PALETTE ─────────────────────────────────────── */
+
+  /* Backgrounds */
+  --color-midnight:       #06071A;   /* near-black navy — deepest bg */
+  --color-midnight-2:     #0A0D24;   /* slightly lifted bg */
+  --color-midnight-3:     #0E1230;   /* section alt bg */
+
+  /* Surfaces (glass / elevated) */
+  --color-crystal:        rgba(200, 216, 245, 0.05);
+  --color-crystal-hover:  rgba(200, 216, 245, 0.09);
+  --color-crystal-border: rgba(200, 216, 245, 0.12);
+  --color-elevated:       rgba(14, 18, 48, 0.85);
+
+  /* Typography */
+  --color-ivory:          #EEF0F5;   /* primary body / headings */
+  --color-moonlight:      #C8D8F0;   /* display, pull text */
+  --color-silver:         #8A97B0;   /* secondary / captions */
+  --color-silver-2:       #64728A;   /* tertiary / placeholder */
+
+  /* Accent */
+  --color-champagne:      #D4B896;   /* CTA, stars, highlights */
+  --color-champagne-dim:  rgba(212, 184, 150, 0.18);
+  --color-champagne-glow: rgba(212, 184, 150, 0.35);
+
+  /* Borders */
+  --border-fine:          1px solid rgba(200, 216, 245, 0.12);
+  --border-accent:        1px solid rgba(212, 184, 150, 0.3);
+  --border-glow:          1px solid rgba(212, 184, 150, 0.5);
+
+  /* Shadows */
+  --shadow-card:          0 4px 32px rgba(6, 7, 26, 0.6),
+                          0 1px 0 rgba(200, 216, 245, 0.06) inset;
+  --shadow-glow-champagne:0 0 24px rgba(212, 184, 150, 0.2);
+  --shadow-glow-moon:     0 0 48px rgba(200, 216, 245, 0.08);
+
+  /* ─── SPACING ─────────────────────────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Section vertical rhythm */
+  --section-padding-y:    clamp(5rem, 10vw, 9rem);
+  --section-gap:          clamp(3rem, 6vw, 6rem);
+
+  /* ─── RADII ──────────────────────────────────────────────── */
+  --radius-sm:    2px;
+  --radius-md:    4px;
+  --radius-lg:    8px;
+  --radius-pill:  999px;
+  /* No excessive rounded-2xl everywhere */
+
+  /* ─── TYPOGRAPHY SCALE ───────────────────────────────────── */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-xs:   clamp(0.7rem,  1vw,  0.75rem);
+  --text-sm:   clamp(0.8rem,  1.5vw, 0.875rem);
+  --text-base: clamp(0.9rem,  1.8vw, 1rem);
+  --text-md:   clamp(1rem,    2vw,   1.125rem);
+  --text-lg:   clamp(1.125rem,2.5vw, 1.25rem);
+  --text-xl:   clamp(1.25rem, 3vw,   1.5rem);
+  --text-2xl:  clamp(1.5rem,  4vw,   2rem);
+  --text-3xl:  clamp(2rem,    5vw,   3rem);
+  --text-4xl:  clamp(2.5rem,  6vw,   4rem);
+  --text-hero: clamp(3.5rem,  9vw,   7.5rem);
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+  --leading-loose:  1.8;
+
+  --tracking-tight:  -0.03em;
+  --tracking-normal: 0em;
+  --tracking-wide:   0.08em;
+  --tracking-wider:  0.16em;
+
+  /* ─── ANIMATION ──────────────────────────────────────────── */
+  --ease-silk:    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-crystal: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --dur-instant:  80ms;
+  --dur-fast:     180ms;
+  --dur-normal:   320ms;
+  --dur-slow:     550ms;
+  --dur-xslow:    900ms;
+  --dur-reveal:   1200ms;
+
+  /* ─── LAYOUT ──────────────────────────────────────────────── */
+  --container-max: 1200px;
+  --container-px:  clamp(1.25rem, 5vw, 4rem);
+
+  /* ─── Z-INDEX ─────────────────────────────────────────────── */
+  --z-particles: 0;
+  --z-content:   1;
+  --z-nav:       100;
+  --z-modal:     200;
+}
