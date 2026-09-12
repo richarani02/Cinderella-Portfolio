@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <!-- Castle silhouette — Midnight Navy / Royal Blue toned -->
+  <defs>
+    <linearGradient id="castleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#1A274E" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#111A3A" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground -->
+  <rect x="0" y="260" width="800" height="40" fill="url(#castleGrad)"/>
+
+  <!-- Left outer tower -->
+  <rect x="40" y="180" width="60" height="80" fill="url(#castleGrad)"/>
+  <rect x="30" y="160" width="80" height="24" fill="url(#castleGrad)"/>
+  <!-- Battlements -->
+  <rect x="30" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="54" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="78" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <!-- Tower peak -->
+  <polygon points="70,100 100,148 40,148" fill="url(#castleGrad)"/>
+  <!-- Window -->
+  <path d="M 62 200 Q 70 192 78 200 L 78 220 Q 70 222 62 220 Z" fill="rgba(169,216,245,0.15)"/>
+
+  <!-- Left inner tower -->
+  <rect x="150" y="150" width="70" height="110" fill="url(#castleGrad)"/>
+  <rect x="140" y="130" width="90" height="24" fill="url(#castleGrad)"/>
+  <rect x="140" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="163" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="186" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <!-- Tower peak -->
+  <polygon points="185,70 210,118 160,118" fill="url(#castleGrad)"/>
+  <!-- Flag -->
+  <line x1="185" y1="70" x2="185" y2="45" stroke="rgba(217,184,108,0.5)" stroke-width="1.5"/>
+  <polygon points="185,45 200,52 185,59" fill="rgba(217,184,108,0.6)"/>
+  <!-- Window -->
+  <path d="M 172 180 Q 185 170 198 180 L 198 205 Q 185 208 172 205 Z" fill="rgba(169,216,245,0.15)"/>
+
+  <!-- Main central keep -->
+  <rect x="280" y="120" width="240" height="140" fill="url(#castleGrad)"/>
+  <!-- Battlements -->
+  <rect x="280" y="100" width="240" height="24" fill="url(#castleGrad)"/>
+  <rect x="280" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="314" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="348" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="382" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="416" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="450" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <rect x="476" y="88" width="24" height="16" fill="url(#castleGrad)"/>
+  <!-- Large arched gate -->
+  <path d="M 360 260 L 360 195 Q 400 175 440 195 L 440 260 Z" fill="rgba(17,26,58,0.9)"/>
+  <rect x="360" y="195" width="80" height="65" fill="rgba(17,26,58,0.9)"/>
+  <!-- Windows -->
+  <path d="M 300 155 Q 315 143 330 155 L 330 185 Q 315 188 300 185 Z" fill="rgba(169,216,245,0.18)"/>
+  <path d="M 470 155 Q 485 143 500 155 L 500 185 Q 485 188 470 185 Z" fill="rgba(169,216,245,0.18)"/>
+  <path d="M 300 210 Q 315 200 330 210 L 330 240 Q 315 242 300 240 Z" fill="rgba(169,216,245,0.12)"/>
+  <path d="M 470 210 Q 485 200 500 210 L 500 240 Q 485 242 470 240 Z" fill="rgba(169,216,245,0.12)"/>
+  <!-- Central tower above keep -->
+  <rect x="360" y="40" width="80" height="90" fill="url(#castleGrad)"/>
+  <polygon points="400,0 440,40 360,40" fill="url(#castleGrad)"/>
+  <!-- Tall flag -->
+  <line x1="400" y1="0" x2="400" y2="-20" stroke="rgba(217,184,108,0.7)" stroke-width="2"/>
+  <polygon points="400,-20 420,-10 400,0" fill="rgba(217,184,108,0.8)"/>
+  <!-- Central window -->
+  <path d="M 382 70 Q 400 58 418 70 L 418 100 Q 400 104 382 100 Z" fill="rgba(217,184,108,0.2)"/>
+
+  <!-- Right inner tower (mirror of left) -->
+  <rect x="580" y="150" width="70" height="110" fill="url(#castleGrad)"/>
+  <rect x="570" y="130" width="90" height="24" fill="url(#castleGrad)"/>
+  <rect x="570" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="593" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="616" y="118" width="16" height="16" fill="url(#castleGrad)"/>
+  <polygon points="615,70 640,118 590,118" fill="url(#castleGrad)"/>
+  <line x1="615" y1="70" x2="615" y2="45" stroke="rgba(217,184,108,0.5)" stroke-width="1.5"/>
+  <polygon points="615,45 630,52 615,59" fill="rgba(217,184,108,0.6)"/>
+  <path d="M 602 180 Q 615 170 628 180 L 628 205 Q 615 208 602 205 Z" fill="rgba(169,216,245,0.15)"/>
+
+  <!-- Right outer tower -->
+  <rect x="700" y="180" width="60" height="80" fill="url(#castleGrad)"/>
+  <rect x="690" y="160" width="80" height="24" fill="url(#castleGrad)"/>
+  <rect x="690" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="714" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <rect x="738" y="148" width="16" height="16" fill="url(#castleGrad)"/>
+  <polygon points="730,100 760,148 700,148" fill="url(#castleGrad)"/>
+  <path d="M 722 200 Q 730 192 738 200 L 738 220 Q 730 222 722 220 Z" fill="rgba(169,216,245,0.15)"/>
+
+  <!-- Connecting walls -->
+  <rect x="100" y="220" width="50" height="40" fill="url(#castleGrad)"/>
+  <rect x="220" y="200" width="62" height="60" fill="url(#castleGrad)"/>
+  <rect x="518" y="200" width="62" height="60" fill="url(#castleGrad)"/>
+  <rect x="650" y="220" width="50" height="40" fill="url(#castleGrad)"/>
+
+  <!-- Decorative moon behind castle (faint) -->
+  <circle cx="660" cy="60" r="30" fill="rgba(169,216,245,0.06)"/>
+  <circle cx="660" cy="60" r="22" fill="rgba(169,216,245,0.04)"/>
+
+  <!-- Tiny star dots -->
+  <circle cx="100" cy="40" r="1" fill="rgba(217,184,108,0.6)"/>
+  <circle cx="200" cy="70" r="0.8" fill="rgba(169,216,245,0.5)"/>
+  <circle cx="700" cy="30" r="1" fill="rgba(217,184,108,0.5)"/>
+  <circle cx="750" cy="80" r="0.8" fill="rgba(169,216,245,0.4)"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="slipperGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="rgba(169,216,245,0.55)"/>
+      <stop offset="40%"  stop-color="rgba(255,249,240,0.30)"/>
+      <stop offset="100%" stop-color="rgba(65,105,161,0.40)"/>
+    </linearGradient>
+    <linearGradient id="slipperShine" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%"   stop-color="rgba(255,249,240,0.7)"/>
+      <stop offset="100%" stop-color="rgba(255,249,240,0)"/>
+    </linearGradient>
+    <filter id="slipperGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Heel -->
+  <path d="M 20 72 Q 18 82 28 84 Q 38 86 40 78 L 42 72 Z"
+        fill="url(#slipperGlass)" stroke="rgba(169,216,245,0.6)" stroke-width="0.8"/>
+
+  <!-- Sole -->
+  <path d="M 20 72 Q 22 68 45 66 L 100 66 Q 108 66 110 62 Q 112 58 108 56 L 42 56 Q 38 56 36 58 L 20 72 Z"
+        fill="url(#slipperGlass)" stroke="rgba(169,216,245,0.5)" stroke-width="0.8"/>
+
+  <!-- Upper body of slipper -->
+  <path d="M 42 56 Q 48 38 70 26 Q 88 16 104 20 Q 114 24 110 36 Q 106 50 92 54 Q 76 58 60 58 L 42 58 Z"
+        fill="url(#slipperGlass)" stroke="rgba(169,216,245,0.65)" stroke-width="1"
+        filter="url(#slipperGlow)"/>
+
+  <!-- Shine highlight on toe cap -->
+  <path d="M 68 30 Q 82 22 96 26 Q 104 30 100 38 Q 88 26 68 30 Z"
+        fill="url(#slipperShine)" opacity="0.7"/>
+
+  <!-- Second smaller shine -->
+  <path d="M 58 42 Q 66 36 78 36 Q 74 46 58 46 Z"
+        fill="rgba(255,249,240,0.35)"/>
+
+  <!-- Toe sparkle -->
+  <circle cx="104" cy="28" r="1.5" fill="#D9B86C" opacity="0.9"/>
+  <line x1="104" y1="24" x2="104" y2="32" stroke="#D9B86C" stroke-width="0.5" opacity="0.6"/>
+  <line x1="100" y1="28" x2="108" y2="28" stroke="#D9B86C" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Ankle bow / ribbon decoration -->
+  <path d="M 50 46 Q 45 40 50 38 Q 55 36 54 42 Q 53 48 50 46 Z"
+        fill="rgba(217,184,108,0.6)" stroke="rgba(217,184,108,0.8)" stroke-width="0.6"/>
+  <path d="M 54 42 Q 55 36 60 38 Q 65 40 60 46 Q 57 48 54 42 Z"
+        fill="rgba(217,184,108,0.6)" stroke="rgba(217,184,108,0.8)" stroke-width="0.6"/>
+  <circle cx="52" cy="42" r="2" fill="#D9B86C" opacity="0.85"/>
+
+  <!-- Star sparkles around slipper -->
+  <g opacity="0.8">
+    <polygon points="22,30 23,27 24,30 27,30 25,32 26,35 23,33 20,35 21,32 19,30"
+             fill="#D9B86C" transform="scale(0.5) translate(20,20)"/>
+    <polygon points="110,18 111,15 112,18 115,18 113,20 114,23 111,21 108,23 109,20 107,18"
+             fill="#A9D8F5" transform="scale(0.4) translate(30,-10)"/>
+    <polygon points="28,50 29,47 30,50 33,50 31,52 32,55 29,53 26,55 27,52 25,50"
+             fill="#D9B86C" transform="scale(0.35) translate(30,50)"/>
+  </g>
+</svg>

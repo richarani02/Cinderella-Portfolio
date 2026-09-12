@@ -5,49 +5,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Richa Rani â€” Web Developer. B.Tech CSE student at O.P. Jindal University. Experienced in React, Node.js, and AI/ML. Explore projects, skills, and experience." />
+    content="Richa Rani — Creative Developer & Designer. Cinderella-themed portfolio showcasing React, Node.js, AI/ML, and Web Application projects." />
   <meta name="keywords"
-    content="Richa Rani, web developer, frontend developer, React developer, portfolio, B.Tech CSE" />
+    content="Richa Rani, Creative Developer, Web Designer, Portfolio, React, Node.js, Cinderella Theme" />
   <meta name="author" content="Richa Rani" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Richa Rani â€” Web Developer" />
-  <meta property="og:description" content="B.Tech CSE student. Frontend development, Java, AI/ML projects." />
-  <meta property="og:type" content="website" />
+  <title>Richa Rani — Creative Developer & Designer</title>
 
-  <title>Richa Rani — Web Developer</title>
-
-  <!-- Favicon — Cinderella star -->
+  <!-- Favicon — Cinderella Star -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="favicon.svg" />
 
-  <!-- Fonts: Cormorant Garamond (display) + Inter (body) -->
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
 
-  <!-- Styles -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/main.css" />
-
-  <!-- Favicon placeholder (star character) -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>âœ¦</text></svg>" />
 </head>
 
 <body>
 
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+  <!-- ══════════════════════════════════════════════════════════
+       MIDNIGHT ENTRANCE OVERLAY
+  ══════════════════════════════════════════════════════════ -->
+  <div id="midnight-overlay" class="midnight-overlay" role="dialog" aria-label="Welcome screen">
+    <div class="clock-container">
+      <div class="clock-face">
+        <div class="clock-hand clock-hand--hour"></div>
+        <div class="clock-hand clock-hand--minute"></div>
+      </div>
+    </div>
+    <div class="midnight-text">
+      The Clock Strikes <span>Midnight</span>...<br />
+      Welcome to Richa's Realm
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
        NAVIGATION
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  ══════════════════════════════════════════════════════════ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
       <div class="nav__inner">
 
-        <a href="#hero" class="nav__logo" aria-label="Richa Rani â€” Home">
+        <a href="#hero" class="nav__logo" aria-label="Richa Rani — Home">
           Richa<span>.</span>
         </a>
 
@@ -55,13 +62,12 @@
         <ul class="nav__links" role="list">
           <li><a href="#about" class="nav__link">About</a></li>
           <li><a href="#skills" class="nav__link">Skills</a></li>
-          <li><a href="#experience" class="nav__link">Experience</a></li>
           <li><a href="#projects" class="nav__link">Projects</a></li>
           <li><a href="#education" class="nav__link">Education</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
 
-        <!-- Mobile toggle -->
+        <!-- Mobile menu toggle button -->
         <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav"
           id="nav-toggle">
           <span></span>
@@ -72,12 +78,11 @@
       </div>
     </div>
 
-    <!-- Mobile drawer -->
+    <!-- Mobile Navigation Drawer -->
     <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
       <ul role="list">
         <li><a href="#about" class="nav__link">About</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#experience" class="nav__link">Experience</a></li>
         <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#education" class="nav__link">Education</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -85,186 +90,89 @@
     </div>
   </nav>
 
+  <!-- ══════════════════════════════════════════════════════════
+       HERO SECTION — ONCE UPON A TIME
+  ══════════════════════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="Hero section">
 
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       HERO â€” THE INVITATION
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="hero" class="hero" aria-label="Hero â€” Introduction">
-
-    <!-- Starfield canvas -->
+    <!-- Interactive Canvas Starfield -->
     <canvas id="starfield" aria-hidden="true"></canvas>
 
-    <!-- Moonlight glow orb -->
+    <!-- Moonlight Glow Backdrop -->
     <div class="hero__glow" aria-hidden="true"></div>
 
-    <!-- Palace arch top decoration -->
+    <!-- Arch SVG Top Decoration -->
     <div class="hero__arch" aria-hidden="true">
       <img src="assets/svgs/palace-arch.svg" alt="" role="presentation" width="600" height="200" loading="eager" />
     </div>
 
-    <!-- Crystal centerpiece focal point emblem -->
-    <div class="hero__crystal-center" aria-hidden="true">
-      <img src="assets/svgs/crystal-cluster.svg" alt="" role="presentation" width="160" height="160" loading="eager" />
+    <!-- Crescent Moon Focal Point -->
+    <div class="hero__moon" aria-hidden="true">
+      <img src="assets/svgs/moon.svg" alt="" role="presentation" width="180" height="180" loading="eager" />
     </div>
 
-    <!-- Crescent moon â€” cinematic right-side focal point -->
-    <div class="hero__moon" aria-hidden="true" id="hero-moon">
-      <img src="assets/svgs/moon.svg" alt="" role="presentation" width="200" height="200" loading="eager" />
+    <!-- Floating Glass Slipper -->
+    <div class="hero__slipper-wrapper" aria-hidden="true">
+      <img src="assets/svgs/glass-slipper.svg" alt="Glass Slipper" role="presentation" width="160" height="120" />
     </div>
-
-    <!-- Bottom floor line -->
-    <div class="hero__floor" aria-hidden="true"></div>
 
     <div class="container">
       <div class="hero__content">
+        <p class="hero__eyebrow">✨ Once upon a time...</p>
+        <h1 class="hero__title">I’m Richa Rani</h1>
+        <p class="hero__role">Creative Developer & Designer</p>
+        <p class="hero__description">Turning ideas into beautiful digital experiences.</p>
 
-        <!-- Eyebrow -->
-        <div class="hero__eyebrow">
-          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-          Web Developer Â· B.Tech CSE Â· 2023â€“2027
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Explore My Work</a>
+          <a href="#about" class="btn btn--secondary">About Me</a>
         </div>
-
-        <!-- Main headline -->
-        <div>
-          <h1 class="hero__headline">
-            <span class="hero__name-first">Richa</span>
-            <em class="hero__name-last">Rani</em>
-          </h1>
-          <p class="hero__role">From Code to Magic</p>
-        </div>
-
-        <!-- Positioning statement from resume -->
-        <p class="hero__tagline">
-          Computer Science student building responsive web applications and AI-based systems. Two internships. Currently
-          seeking new opportunities.
-        </p>
-
-        <!-- CTA buttons -->
-        <div class="hero__cta">
-          <a href="#projects" class="btn btn--primary" id="cta-projects">
-            View Projects
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <a href="assets/RICHA RANI resume.pdf" download="Richa_Rani_Resume.pdf" class="btn btn--ghost"
-            id="cta-resume">
-            Download CV
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M7 2v7M4 7l3 3 3-3M2 12h10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn--ghost" id="cta-contact">
-            Contact
-          </a>
-        </div>
-
-        <!-- Social links â€” placeholders (update href when you share URLs) -->
-        <div class="social-links" aria-label="Social media links">
-          <!-- GitHub â€” update href below -->
-          <a href="https://github.com/richarani02" class="social-link" aria-label="GitHub profile " data-social="github"
-            rel="noopener noreferrer" target="_blank">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <!-- LinkedIn â€” update href below -->
-          <a href="https://www.linkedin.com/in/richa-rani-957627429?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-            class="social-link" aria-label="LinkedIn profile " data-social="linkedin" rel="noopener noreferrer"
-            target="_blank">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-          <!-- Email -->
-          <a href="mailto:ranirichasharma310@gmail.com" class="social-link" aria-label="Send email to Richa Rani"
-            id="hero-email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              aria-hidden="true">
-              <path
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </a>
-        </div>
-
       </div>
     </div>
-
-    <!-- Scroll indicator -->
-    <div class="hero__scroll" aria-hidden="true">
-      <div class="hero__scroll-line"></div>
-      <span class="hero__scroll-label">Scroll</span>
-    </div>
-
   </section>
 
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       ORNAMENT DIVIDER
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       ABOUT â€” BEHIND THE GLASS
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="about" class="section" aria-label="About Richa Rani">
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 1: ABOUT ME — THE STORY BEGINS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="about" class="section section--alt" aria-label="About Me">
     <div class="container">
 
-      <div class="about__grid">
-        <!-- Left: copy -->
-        <div class="about__text">
-          <p class="section-label reveal">About</p>
-          <h2 class="section-title reveal reveal--delay-1">
-            Behind the <span>Glass</span>
-          </h2>
+      <div class="reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">“The Story <span>Begins”</span></h2>
+      </div>
 
-          <p class="reveal reveal--delay-2">
-            I'm <strong>Richa Rani</strong>, a B.Tech Computer Science and Engineering student at
-            O.P. Jindal University, Raigarh â€” currently in my fourth year with a CGPA of 8.87.
-          </p>
-          <p class="reveal reveal--delay-3">
-            My focus spans <strong>full-stack web development</strong> and <strong>AI/ML research</strong>.
-            I've built responsive interfaces, integrated third-party APIs, and developed an AI-based
-            pothole detection system using image processing and machine learning.
-          </p>
-          <p class="reveal reveal--delay-4">
-            I've completed internships in both <strong>Front-End Development</strong> at Cognifyz Technologies
-            and <strong>Java development</strong> at 1Stop (Unstop), and I'm actively seeking new opportunities
-            to contribute to meaningful projects.
-          </p>
-
-          <div class="ornament-line reveal reveal--delay-5" aria-hidden="true">
-            <div class="ornament-diamond"></div>
-            <div class="ornament-diamond" style="opacity:0.35;"></div>
-            <div class="ornament-diamond"></div>
+      <div class="about__grid reveal">
+        <!-- Circular Profile Avatar -->
+        <div class="about__avatar-wrapper">
+          <div class="about__avatar-ring"></div>
+          <div class="about__avatar">
+            <span class="about__avatar-initials">RR</span>
           </div>
         </div>
 
-        <!-- Right: stat cards -->
-        <div class="about__stats">
-          <div class="stat-card reveal shimmer">
-            <div class="stat-number">8.87</div>
-            <div class="stat-label">CGPA</div>
-          </div>
-          <div class="stat-card reveal reveal--delay-1 shimmer">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Internships</div>
-          </div>
-          <div class="stat-card reveal reveal--delay-2 shimmer">
-            <div class="stat-number">4+</div>
-            <div class="stat-label">Projects Built</div>
-          </div>
-          <div class="stat-card reveal reveal--delay-3 shimmer">
-            <div class="stat-number">1</div>
-            <div class="stat-label">Certification</div>
+        <!-- Short Introduction -->
+        <div class="about__bio">
+          <p>
+            Welcome to my digital fairytale. I am a <strong>Creative Developer & Designer</strong> currently pursuing my B.Tech in Computer Science & Engineering at O.P. Jindal University (GPA 8.65).
+          </p>
+          <p>
+            I specialize in crafting high-impact frontend interfaces, dynamic full-stack web applications, and intelligent systems. By blending technical precision with artistic design, I turn complex ideas into seamless user experiences.
+          </p>
+
+          <div class="about__highlights">
+            <div class="about__highlight-card">
+              <div class="about__highlight-num">8.65</div>
+              <div class="about__highlight-label">B.Tech CGPA</div>
+            </div>
+            <div class="about__highlight-card">
+              <div class="about__highlight-num">4+</div>
+              <div class="about__highlight-label">Featured Projects</div>
+            </div>
+            <div class="about__highlight-card">
+              <div class="about__highlight-num">Intel</div>
+              <div class="about__highlight-label">Unnati Certified</div>
+            </div>
           </div>
         </div>
       </div>
@@ -272,218 +180,105 @@
     </div>
   </section>
 
-
-  <!-- ORNAMENT -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       SKILLS â€” THE ENCHANTED TOOLKIT
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="skills" class="section section--alt" aria-label="Skills and technologies">
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 2: SKILLS — MY MAGIC
+  ══════════════════════════════════════════════════════════ -->
+  <section id="skills" class="section" aria-label="Skills">
     <div class="container">
 
       <div class="reveal">
         <p class="section-label">Skills</p>
-        <h2 class="section-title">The Enchanted <span>Toolkit</span></h2>
-        <p class="section-subtitle">
-          Technologies and disciplines built through coursework, internships, and independent projects.
-        </p>
+        <h2 class="section-title">“My <span>Magic”</span></h2>
+        <p class="section-subtitle">A breakdown of my core technical proficiencies & ratings.</p>
       </div>
 
-      <div class="skills__groups" style="margin-top: var(--space-10);">
+      <div class="skills__grid reveal">
 
-        <!-- Languages & Fundamentals -->
-        <div class="skill-group reveal">
-          <h3 class="skill-group__title">
-            <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
-            </svg>
-            Languages &amp; Fundamentals
-          </h3>
-          <div class="skill-tags" role="list">
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0 0-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/>
-              </svg>
-              Java
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.89S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.031v-2.867s-.109-3.402 3.343-3.402h5.764s3.232.052 3.232-3.124V3.19S18.28 0 11.914 0zm-3.2 1.848a1.032 1.032 0 1 1 0 2.065 1.032 1.032 0 0 1 0-2.065zM17.8 6.235v2.78s.11 3.402-3.343 3.402H8.693s-3.232-.052-3.232 3.124v4.346s-.49 3.113 5.876 3.113c6.366 0 6.152-2.978 6.152-2.978l-.007-2.752H11.67v-.826h8.132S24 13.088 24 6.908c0-6.18-3.403-5.96-3.403-5.96H18.566v2.867s.109 3.402-3.343 3.402H9.459s-3.232-.052-3.232 3.124v4.346M12.37 22.152a1.032 1.032 0 1 1 0-2.065 1.032 1.032 0 0 1 0 2.065z"/>
-              </svg>
-              Python
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M16.5 12c0-2.5-1.5-4.5-3.5-4.5S9.5 9.5 9.5 12s1.5 4.5 3.5 4.5c1.2 0 2.3-.7 2.9-1.7l2.6 1.5C17.3 18.1 15.3 19.5 13 19.5 9.4 19.5 6.5 16.1 6.5 12S9.4 4.5 13 4.5c2.3 0 4.3 1.4 5.4 3.5L16.5 9.5"/>
-              </svg>
-              C
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-              </svg>
-              Data Structures &amp; Algorithms
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/>
-              </svg>
-              Object-Oriented Programming
-            </span>
-
+        <!-- ✨ HTML ⭐⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">✨ HTML</span>
+            <span class="skill-card__stars">★★★★★</span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="100%"></div>
           </div>
         </div>
 
-        <!-- Web Development -->
-        <div class="skill-group reveal reveal--delay-1">
-          <h3 class="skill-group__title">
-            <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
-            </svg>
-            Web Development
-          </h3>
-          <div class="skill-tags" role="list">
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
-              </svg>
-              HTML &amp; CSS
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.759-1.14-.271-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
-              </svg>
-              JavaScript
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09c.301 0 .55.068.75.213.51.374.708 1.171.529 2.343-.047.32-.12.65-.213.99-.985-.227-2.064-.35-3.18-.35-.85 0-1.674.08-2.443.226-.227-.35-.44-.697-.632-1.039-.552-.952-.826-1.768-.592-2.265.105-.225.294-.367.545-.44.14-.04.296-.056.461-.056zm-9.477.88c.67 0 1.45.24 2.274.757-.59.813-1.137 1.718-1.595 2.683-.756.16-1.48.375-2.15.644-.212-.74-.332-1.456-.334-2.092 0-.897.198-1.51.56-1.79a.94.94 0 0 1 .571-.182c.22 0 .43.03.674.09v-.11zm4.736 7.71c-.292-.518-.58-1.062-.85-1.618.276-.553.565-1.093.857-1.607.274.515.56 1.058.84 1.615-.282.553-.57 1.093-.847 1.61zm-1.44-3.24c-.565 1.175-1.083 2.35-1.542 3.506-.453-.273-.897-.553-1.328-.842.183-.953.443-1.932.773-2.91.43.082.875.155 1.343.22.254.029.509.055.754.076zm-.755 3.985c.462 1.159.98 2.335 1.548 3.508-.245.022-.5.048-.756.079-.467.064-.91.136-1.34.218-.332-.978-.59-1.957-.775-2.912.43-.289.875-.568 1.323-.893zm3.745.23c.28.558.57 1.1.853 1.617-.283.553-.57 1.093-.847 1.61-.273-.513-.557-1.052-.838-1.61.284-.553.57-1.097.832-1.617zm1.438 3.23c.458-1.166.975-2.34 1.54-3.503.252-.022.507-.048.763-.08.466-.063.91-.136 1.34-.219.332.979.59 1.957.775 2.912-.43.29-.875.568-1.322.893-.463-1.161-.98-2.337-1.547-3.508l-.003.034c-.28.558-.568 1.103-.852 1.616-.27-.514-.558-1.057-.84-1.615l.146-.53zm2.434-.66c.183.954.443 1.933.773 2.91-.43.082-.874.155-1.342.22-.254.029-.51.055-.756.076-.457-1.163-.975-2.336-1.54-3.505.245-.022.5-.048.756-.08.468-.063.912-.136 1.342-.218.106.2.484.4.767.597zm.82 3.4c-.145.05-.302.075-.465.075-.223 0-.428-.031-.674-.09l.001.11c-.67 0-1.45-.24-2.274-.757.59-.813 1.137-1.718 1.595-2.683.756.161 1.48.376 2.15.644.213.74.334 1.457.334 2.093 0 .897-.199 1.508-.562 1.79-.065.05-.138.088-.205.12l-.1-.302zm-9.23-12.21c-.59.813-1.138 1.718-1.594 2.683-.757-.161-1.48-.376-2.152-.644-.212-.74-.333-1.456-.334-2.092 0-.898.2-1.51.563-1.79.065-.05.138-.088.205-.12l.1.303c.145-.05.301-.075.463-.075.673 0 1.452.24 2.276.758l-.527-.023z"/>
-              </svg>
-              React
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M11.998 24c-.321 0-.641-.084-.924-.247l-2.938-1.737c-.438-.245-.224-.332-.08-.383.586-.203.704-.25 1.327-.604.065-.037.151-.023.218.018l2.256 1.339c.082.044.199.044.275 0l8.794-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.191-.135-.238l-8.791-5.072c-.082-.047-.198-.047-.28 0L3.054 6.683c-.083.048-.137.14-.137.238v10.15c0 .097.054.189.135.235l2.409 1.392c1.307.654 2.108-.116 2.108-.891V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.111.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551l-2.303-1.326C.572 18.37 0 17.445 0 16.449V6.3c0-.997.572-1.923 1.497-2.422l8.796-5.082c.906-.519 2.113-.519 3.014 0l8.796 5.082C23.029 4.377 24 5.303 24 6.3v10.149c0 .997-.571 1.922-1.497 2.42l-8.796 5.082c-.282.163-.603.247-.924.247zm2.718-6.983c-3.847 0-4.651-1.765-4.651-3.244 0-.142.114-.253.256-.253h1.139c.127 0 .233.092.252.217.172 1.161.685 1.748 3.005 1.748 1.849 0 2.635-.418 2.635-1.399 0-.566-.223-.986-3.099-1.267-2.404-.238-3.889-.768-3.889-2.693 0-1.775 1.495-2.834 4.003-2.834 2.813 0 4.207.976 4.38 3.072.007.074-.018.147-.065.2a.26.26 0 0 1-.193.085h-1.146a.253.253 0 0 1-.248-.199c-.274-1.215-.942-1.604-2.728-1.604-2.009 0-2.241.699-2.241 1.222 0 .635.276.82 3.003 1.178 2.698.355 3.985.859 3.985 2.763.001 1.917-1.598 3.017-4.398 3.017z"/>
-              </svg>
-              Node.js
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.625.052.052 0 01.025-.06.114.114 0 01.115-.128.218.218 0 01.217-.143h1.583l-.002.026-.022.205c-.72 3.155-3.865 4.578-7.055 3.96C2.168 18.913.436 16.607.002 13.597z"/>
-              </svg>
-              Express.js
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-              </svg>
-              Responsive Design
-            </span>
-
+        <!-- CSS ⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">🎨 CSS</span>
+            <span class="skill-card__stars">★★★★<span class="star-dim">☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="85%"></div>
           </div>
         </div>
 
-        <!-- Databases -->
-        <div class="skill-group reveal reveal--delay-2">
-          <h3 class="skill-group__title">
-            <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-            Databases
-          </h3>
-          <div class="skill-tags" role="list">
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.182-.151zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c0 .68-.187 1.2-.56 1.556-.34.325-.79.487-1.35.487-.54 0-.967-.164-1.28-.49-.316-.33-.472-.774-.472-1.332 0-.685.188-1.205.567-1.56.341-.324.792-.485 1.351-.485.542 0 .967.162 1.278.488.316.332.466.777.466 1.336zm-1.405.892c.138-.194.207-.496.207-.91 0-.39-.07-.688-.21-.895-.14-.206-.337-.31-.59-.31-.257 0-.456.104-.598.31-.142.207-.213.505-.213.896 0 .41.07.712.213.907.14.195.34.294.6.294.253 0 .452-.097.591-.292z"/>
-              </svg>
-              SQL / MySQL
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M17.193 9.555c-1.264-5.58-4.252-7.243-4.556-7.362C12.402 2.098 12.039 2 12 2c-.407 0-.609.156-.961.329-.573.279-3.412 1.808-4.477 7.226-.484 2.504-.38 5.048.275 7.506.615 2.335 1.681 4.163 3.123 5.38.343.29.715.537 1.109.726.287.138.576.208.869.208.257 0 .514-.058.77-.173.414-.187.813-.46 1.183-.808 1.41-1.27 2.44-3.156 3.022-5.463.516-1.994.6-4.16.28-6.376zm-5.193 9.11c-1.39 0-2.52-1.66-2.52-3.71 0-2.044 1.13-3.705 2.52-3.705 1.393 0 2.525 1.661 2.525 3.705 0 2.05-1.132 3.71-2.525 3.71z"/>
-              </svg>
-              MongoDB
-            </span>
-
+        <!-- JavaScript ⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">⚡ JavaScript</span>
+            <span class="skill-card__stars">★★★★<span class="star-dim">☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="85%"></div>
           </div>
         </div>
 
-        <!-- AI / ML -->
-        <div class="skill-group reveal reveal--delay-3">
-          <h3 class="skill-group__title">
-            <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
-            </svg>
-            AI / Machine Learning
-          </h3>
-          <div class="skill-tags" role="list">
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
-              </svg>
-              Machine Learning
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-              </svg>
-              Image Processing
-            </span>
-
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2a4 4 0 014 4v1a4 4 0 010 8v1a4 4 0 01-4 4 4 4 0 01-4-4v-1a4 4 0 010-8V6a4 4 0 014-4z"/><circle cx="12" cy="12" r="2"/>
-              </svg>
-              AI-based Systems
-            </span>
-
+        <!-- React ⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">⚛️ React</span>
+            <span class="skill-card__stars">★★★★<span class="star-dim">☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="80%"></div>
           </div>
         </div>
 
-        <!-- IoT -->
-        <div class="skill-group reveal reveal--delay-4">
-          <h3 class="skill-group__title">
-            <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M8.111 16.404a5.5 5.5 0 017.778 0"/><path d="M5 13a9 9 0 0114 0"/><path d="M2 9.5a13.5 13.5 0 0120 0"/><circle cx="12" cy="20" r="1"/>
-            </svg>
-            Internet of Things
-          </h3>
-          <div class="skill-tags" role="list">
+        <!-- Node.js ⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">🟢 Node.js</span>
+            <span class="skill-card__stars">★★★<span class="star-dim">☆☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="70%"></div>
+          </div>
+        </div>
 
-            <span class="skill-tag" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1"/>
-              </svg>
-              IoT Fundamentals
-            </span>
+        <!-- Python ⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">🐍 Python</span>
+            <span class="skill-card__stars">★★★★<span class="star-dim">☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="85%"></div>
+          </div>
+        </div>
 
-            <span class="skill-tag skill-tag--cert" role="listitem">
-              <svg class="skill-tag__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
-              </svg>
-              NPTEL Certified
-            </span>
+        <!-- Java ⭐⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">☕ Java</span>
+            <span class="skill-card__stars">★★★★<span class="star-dim">☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="80%"></div>
+          </div>
+        </div>
 
+        <!-- MongoDB ⭐⭐⭐ -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <span class="skill-card__name">🍃 MongoDB & SQL</span>
+            <span class="skill-card__stars">★★★<span class="star-dim">☆☆</span></span>
+          </div>
+          <div class="skill-card__bar-bg">
+            <div class="skill-card__bar-fill" data-width="70%"></div>
           </div>
         </div>
 
@@ -492,158 +287,97 @@
     </div>
   </section>
 
-
-  <!-- ORNAMENT -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       EXPERIENCE â€” THE JOURNEY
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="experience" class="section" aria-label="Work experience">
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 3: PROJECTS — MY MAGICAL CREATIONS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="projects" class="section section--alt" aria-label="Projects">
     <div class="container">
 
-      <div class="reveal" style="margin-bottom: var(--space-10);">
-        <p class="section-label">Experience</p>
-        <h2 class="section-title">The <span>Journey</span></h2>
-        <p class="section-subtitle">
-          Internships and roles that have shaped my craft.
-        </p>
-      </div>
-
-      <div class="timeline" role="list">
-
-        <!-- Experience 1 -->
-        <article class="timeline__item reveal" role="listitem">
-          <div class="timeline__node" aria-hidden="true">
-            <div class="timeline__node-star"></div>
-          </div>
-          <time class="timeline__period" datetime="2026-02">Feb 2026 â€” Mar 2026</time>
-          <h3 class="timeline__role">Front-End Development Intern</h3>
-          <p class="timeline__company">Cognifyz Technologies</p>
-          <ul class="timeline__duties" aria-label="Responsibilities at Cognifyz Technologies">
-            <li class="timeline__duty">Developed responsive UI using HTML, CSS, and JavaScript</li>
-            <li class="timeline__duty">Improved website layout and user experience</li>
-            <li class="timeline__duty">Implemented reusable components to enhance code efficiency</li>
-            <li class="timeline__duty">Collaborated on development tasks within a team environment</li>
-          </ul>
-        </article>
-
-        <!-- Experience 2 -->
-        <article class="timeline__item reveal reveal--delay-2" role="listitem">
-          <div class="timeline__node" aria-hidden="true">
-            <div class="timeline__node-star"></div>
-          </div>
-          <time class="timeline__period" datetime="2024-11">Nov 2024 â€” Dec 2024</time>
-          <h3 class="timeline__role">Java Developer Intern</h3>
-          <p class="timeline__company">1Stop / Unstop</p>
-          <ul class="timeline__duties" aria-label="Responsibilities at 1Stop">
-            <li class="timeline__duty">Completed Java-based internship programme</li>
-            <li class="timeline__duty">Practised object-oriented programming concepts</li>
-            <li class="timeline__duty">Worked on coding assignments and problem-solving exercises</li>
-          </ul>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ORNAMENT -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       PROJECTS â€” CRAFTED TRANSFORMATIONS
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="projects" class="section section--alt" aria-label="Academic and personal projects">
-    <div class="container">
-
-      <div class="reveal" style="margin-bottom: var(--space-10);">
+      <div class="reveal">
         <p class="section-label">Projects</p>
-        <h2 class="section-title">Crafted <span>Transformations</span></h2>
-        <p class="section-subtitle">
-          Selected work built during coursework and independent exploration.
-        </p>
+        <h2 class="section-title">“My Magical <span>Creations”</span></h2>
+        <p class="section-subtitle">Explore a curated collection of digital experiences and intelligent applications.</p>
       </div>
 
-      <div class="projects__grid">
+      <div class="projects__grid reveal">
 
-        <!-- Project 1: Road Damage Detection â€” Featured -->
-        <article class="project-card reveal" aria-label="Road Damage and Pothole Detection project">
-          <div class="project-card__chapter" aria-hidden="true">01</div>
-          <p class="project-card__label">AI / Machine Learning</p>
-          <h3 class="project-card__title">Road Damage &amp; Pothole Detection</h3>
-          <p class="project-card__desc">
-            An AI-based system to detect potholes and road damage using image processing and
-            machine learning techniques. Improved detection accuracy and reduced false positives
-            through model refinement.
-          </p>
-          <div class="project-card__tech" aria-label="Technologies used">
-            <span class="project-tech-tag">Python</span>
-            <span class="project-tech-tag">Machine Learning</span>
-            <span class="project-tech-tag">Image Processing</span>
-            <span class="project-tech-tag">AI</span>
+        <!-- 🏰 Project 01 — Portfolio -->
+        <div class="project-card">
+          <div>
+            <span class="project-card__icon">🏰</span>
+            <h3 class="project-card__title">Project 01 — Portfolio</h3>
+            <p class="project-card__desc">
+              A high-end cinematic Cinderella-themed developer portfolio built with semantic HTML5, Vanilla CSS design tokens, Canvas starfield animations, and custom cursor trail interactions.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">Vanilla CSS</span>
+              <span class="project-tag">Canvas JS</span>
+              <span class="project-tag">UX/UI</span>
+            </div>
           </div>
-        </article>
-
-        <!-- Project 2: Responsive Websites -->
-        <article class="project-card reveal reveal--delay-1" aria-label="Responsive Websites project">
-          <div class="project-card__chapter" aria-hidden="true">02</div>
-          <p class="project-card__label">Web Development</p>
-          <h3 class="project-card__title">Responsive Web Pages</h3>
-          <p class="project-card__desc">
-            A collection of responsive, mobile-friendly web pages designed and built using HTML,
-            CSS, and JavaScript. Optimised for cross-browser compatibility and varied screen sizes.
-          </p>
-          <div class="project-card__tech" aria-label="Technologies used">
-            <span class="project-tech-tag">HTML</span>
-            <span class="project-tech-tag">CSS</span>
-            <span class="project-tech-tag">JavaScript</span>
+          <div class="project-card__links">
+            <a href="#hero" class="project-link">Live Demo ✦</a>
+            <a href="https://github.com/richarani02/Cinderella-Portfolio" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
           </div>
-        </article>
+        </div>
 
-        <!-- Project 3: Portfolio Website -->
-        <article class="project-card reveal reveal--delay-2" aria-label="Portfolio Website project">
-          <div class="project-card__chapter" aria-hidden="true">03</div>
-          <p class="project-card__label">Web Development</p>
-          <h3 class="project-card__title">Portfolio Website</h3>
-          <p class="project-card__desc">
-            Designed and developed a personal portfolio to showcase projects, skills, and
-            certifications. You're looking at the latest iteration now.
-          </p>
-          <div class="project-card__tech" aria-label="Technologies used">
-            <span class="project-tech-tag">HTML</span>
-            <span class="project-tech-tag">CSS</span>
-            <span class="project-tech-tag">JavaScript</span>
+        <!-- ✨ Project 02 — Chatbot -->
+        <div class="project-card">
+          <div>
+            <span class="project-card__icon">✨</span>
+            <h3 class="project-card__title">Project 02 — AI Chatbot</h3>
+            <p class="project-card__desc">
+              An intelligent natural language chatbot interface built to process user inquiries dynamically with smooth real-time response rendering and intuitive conversational flows.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Node API</span>
+            </div>
           </div>
-        </article>
+          <div class="project-card__links">
+            <a href="#" class="project-link">Explore Code ↗</a>
+          </div>
+        </div>
 
-        <!-- Mini Projects subsection -->
-        <div class="reveal" style="margin-top: var(--space-4);">
-          <p class="section-label" style="margin-bottom: var(--space-6);">Mini Projects</p>
-          <div class="mini-projects">
+        <!-- 🔮 Project 03 — Web Application -->
+        <div class="project-card">
+          <div>
+            <span class="project-card__icon">🔮</span>
+            <h3 class="project-card__title">Project 03 — Medical Predictive Web App</h3>
+            <p class="project-card__desc">
+              Intel Unnati industrial training project for liver disease prediction using Machine Learning classification algorithms integrated into an interactive web app interface.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Scikit-Learn</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/richarani02" target="_blank" rel="noopener" class="project-link">GitHub Repo ↗</a>
+          </div>
+        </div>
 
-            <article class="mini-card" aria-label="To-Do List Application">
-              <h4 class="mini-card__title">To-Do List</h4>
-              <p class="mini-card__desc">Task management application with persistent state.</p>
-            </article>
-
-            <article class="mini-card" aria-label="Weather App with API Integration">
-              <h4 class="mini-card__title">Weather App</h4>
-              <p class="mini-card__desc">Live weather data via third-party API integration.</p>
-            </article>
-
-            <article class="mini-card" aria-label="Login Authentication System">
-              <h4 class="mini-card__title">Auth System</h4>
-              <p class="mini-card__desc">Login and authentication flow implementation.</p>
-            </article>
-
+        <!-- 🧹 Project 04 — Smart Trash Collector -->
+        <div class="project-card">
+          <div>
+            <span class="project-card__icon">🤖</span>
+            <h3 class="project-card__title">Smart Trash Collector System</h3>
+            <p class="project-card__desc">
+              An automated waste management solution combining Arduino hardware sensors and IoT tracking for smart urban cleanliness monitoring.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-tag">Arduino</span>
+              <span class="project-tag">C++</span>
+              <span class="project-tag">IoT Sensors</span>
+            </div>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/richarani02" target="_blank" rel="noopener" class="project-link">View Project ↗</a>
           </div>
         </div>
 
@@ -652,287 +386,135 @@
     </div>
   </section>
 
-
-  <!-- ORNAMENT -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       EDUCATION â€” THE FOUNDATION
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="education" class="section" aria-label="Education history">
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 4: EDUCATION & JOURNEY
+  ══════════════════════════════════════════════════════════ -->
+  <section id="education" class="section" aria-label="Education and Journey">
     <div class="container">
 
-      <div class="reveal" style="margin-bottom: var(--space-10);">
+      <div class="reveal">
         <p class="section-label">Education</p>
-        <h2 class="section-title">The <span>Foundation</span></h2>
+        <h2 class="section-title">“The <span>Journey”</span></h2>
+        <p class="section-subtitle">A timeline of my academic milestones and professional experience.</p>
       </div>
 
-      <!-- Education items + Certification in the same section -->
-      <div class="education__items">
+      <div class="timeline reveal">
 
         <!-- B.Tech -->
-        <div class="edu-card reveal">
-          <div class="edu-card__year">2023â€“2027</div>
-          <div>
-            <h3 class="edu-card__degree">B.Tech â€” Computer Science &amp; Engineering</h3>
-            <p class="edu-card__school">O.P. Jindal University, Raigarh (Punjipathra)</p>
-            <p class="edu-card__detail">CGPA: 8.87</p>
+        <div class="timeline-item">
+          <div class="timeline-node">✦</div>
+          <div class="timeline-card">
+            <div class="timeline-date">2022 — Present</div>
+            <h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+            <div class="timeline-subtitle">O.P. Jindal University • CGPA: 8.65</div>
+            <p class="timeline-desc">
+              Specializing in full-stack web development, data structures, algorithms, and artificial intelligence. Active Core Team Lead in the OPJU Innovation Club.
+            </p>
           </div>
         </div>
 
-        <!-- XII -->
-        <div class="edu-card reveal reveal--delay-1">
-          <div class="edu-card__year">2022â€“2023</div>
-          <div>
-            <h3 class="edu-card__degree">Class XII</h3>
-            <p class="edu-card__school">DAV Public School, Ara Kuju, Ramgarh, Jharkhand</p>
+        <!-- Intel Unnati -->
+        <div class="timeline-item">
+          <div class="timeline-node">✨</div>
+          <div class="timeline-card">
+            <div class="timeline-date">Summer 2024</div>
+            <h3 class="timeline-title">Intel Unnati Industrial Training</h3>
+            <div class="timeline-subtitle">Intel Corporation</div>
+            <p class="timeline-desc">
+              Completed intensive hands-on training focusing on machine learning model building, data processing pipelines, and deployment of predictive analytics web applications.
+            </p>
           </div>
         </div>
 
-        <!-- X -->
-        <div class="edu-card reveal reveal--delay-2">
-          <div class="edu-card__year">2020â€“2021</div>
-          <div>
-            <h3 class="edu-card__degree">Class X</h3>
-            <p class="edu-card__school">DAV Public School, Ara Kuju, Ramgarh, Jharkhand</p>
+        <!-- Senior Secondary (12th) -->
+        <div class="timeline-item">
+          <div class="timeline-node">🌙</div>
+          <div class="timeline-card">
+            <div class="timeline-date">2020 — 2022</div>
+            <h3 class="timeline-title">Higher Secondary Education (12th Grade)</h3>
+            <div class="timeline-subtitle">Central Board of Secondary Education (CBSE)</div>
+            <p class="timeline-desc">
+              Completed coursework in Physics, Chemistry, Mathematics, and Computer Science with strong academic distinction.
+            </p>
           </div>
         </div>
 
-      </div>
-
-      <!-- Certification subsection -->
-      <div style="margin-top: var(--space-12);">
-        <p class="section-label reveal" style="margin-bottom: var(--space-6);">Certification</p>
-        <h2 class="section-title reveal" style="font-size: var(--text-2xl);">
-          A <span>Milestone</span>
-        </h2>
-
-        <div class="cert-card reveal" style="margin-top: var(--space-6);"
-          aria-label="Internet of Things certification by NPTEL">
-          <div class="cert-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M8.111 16.404a5.5 5.5 0 017.778 0M5 13a9 9 0 0114 0M2 9.5a13.5 13.5 0 0120 0" />
-              <circle cx="12" cy="20" r="1" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="cert-name">Internet of Things (IoT)</h3>
-            <p class="cert-issuer">NPTEL</p>
+        <!-- Secondary (10th) -->
+        <div class="timeline-item">
+          <div class="timeline-node">🏰</div>
+          <div class="timeline-card">
+            <div class="timeline-date">2018 — 2020</div>
+            <h3 class="timeline-title">Secondary Education (10th Grade)</h3>
+            <div class="timeline-subtitle">Central Board of Secondary Education (CBSE)</div>
+            <p class="timeline-desc">
+              Foundational education with excellence in Science and Mathematics.
+            </p>
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-
-  <!-- ORNAMENT -->
-  <div class="arch-divider" aria-hidden="true">
-    <img src="assets/svgs/ornament-divider.svg" alt="" role="presentation" width="800" height="60" loading="lazy" />
-  </div>
-
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       CONTACT â€” BEFORE MIDNIGHT
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <section id="contact" class="section section--alt" aria-label="Contact Richa Rani">
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 5: CONTACT — MEET ME AT MIDNIGHT
+  ══════════════════════════════════════════════════════════ -->
+  <section id="contact" class="section contact section--alt" aria-label="Contact">
     <div class="container">
 
-      <div class="reveal" style="margin-bottom: var(--space-10);">
-        <p class="section-label">Contact</p>
-        <h2 class="section-title">Before <span>Midnight</span></h2>
-        <p class="section-subtitle">
-          Opportunities, collaborations, or just a conversation â€” reach out before the clock strikes twelve.
+      <div class="reveal" style="text-align: center;">
+        <p class="section-label" style="justify-content: center;">Contact</p>
+        <h2 class="section-title">“Meet Me at <span>Midnight” 🌙</span></h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          Have a project in mind? Let's create some magic together.
         </p>
       </div>
 
-      <div class="contact__grid">
-
-        <!-- Left: contact info -->
-        <div class="contact__details reveal">
-
-          <a href="mailto:rich.bt23cs75@opju.ac.in" class="contact__item" aria-label="Email Richa Rani"
-            id="contact-email">
-            <svg class="contact__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              aria-hidden="true">
-              <path
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <div>
-              <div class="contact__item-label">Email</div>
-              <div class="contact__item-value">rich.bt23cs75@opju.ac.in</div>
-            </div>
-          </a>
-
-          <a href="tel:+919304994394" class="contact__item" aria-label="Call Richa Rani" id="contact-phone">
-            <svg class="contact__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              aria-hidden="true">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <div>
-              <div class="contact__item-label">Phone</div>
-              <div class="contact__item-value">(+91) 9304994394</div>
-            </div>
-          </a>
-
-          <div class="contact__item" aria-label="Location">
-            <svg class="contact__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              aria-hidden="true">
-              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <div>
-              <div class="contact__item-label">Location</div>
-              <div class="contact__item-value">Ramgarh, Jharkhand, India</div>
-            </div>
+      <div class="contact-form-wrapper reveal">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required />
           </div>
 
-          <!-- Social links in contact -->
-          <div class="social-links" aria-label="Social profiles">
-            <a href="#" class="social-link" aria-label="GitHub (link pending)" data-social="github"
-              rel="noopener noreferrer" target="_blank">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-              </svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn (link pending)" data-social="linkedin"
-              rel="noopener noreferrer" target="_blank">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required />
           </div>
 
-        </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your magic idea..." required></textarea>
+          </div>
 
-        <!-- Right: contact form -->
-        <div class="contact__form-wrapper reveal reveal--delay-1">
-          <form class="contact__form" id="contact-form" aria-label="Contact form" novalidate>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-name">Name</label>
-              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required
-                autocomplete="name" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-email-input">Email</label>
-              <input type="email" id="contact-email-input" name="email" class="form-input" placeholder="your@email.com"
-                required autocomplete="email" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-message">Message</label>
-              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Your message..."
-                required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary" id="form-submit" style="align-self: flex-start;">
-              Send Message
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-
-            <p style="font-size: var(--text-xs); color: var(--color-silver-2); margin-top: var(--space-2);">
-              This form is for demonstration. Please use email for direct contact.
-            </p>
-
-          </form>
-        </div>
-
+          <button type="submit" class="btn btn--primary" style="width: 100%;">
+            Send Message ✨
+          </button>
+        </form>
       </div>
 
     </div>
+
+    <!-- Castle Silhouette Asset Footer Decoration -->
+    <div class="castle-bg" aria-hidden="true">
+      <img src="assets/svgs/castle-silhouette.svg" alt="Castle Silhouette" role="presentation" />
+    </div>
   </section>
 
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+  <!-- ══════════════════════════════════════════════════════════
        FOOTER
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  ══════════════════════════════════════════════════════════ -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="footer__inner">
-
-        <div class="footer__logo">Richa Rani</div>
-
-        <div class="ornament-line" style="max-width: 300px; margin: 0 auto;" aria-hidden="true">
-          <div class="ornament-diamond"></div>
-        </div>
-
-        <!-- Midnight detail â€” subtle 12-star arrangement -->
-        <div class="midnight-ornament" aria-hidden="true" title="Before midnight">
-          <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
-          <span class="midnight-ornament__text">
-            âœ¦ &nbsp; Crafted with care &nbsp; âœ¦
-          </span>
-          <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
-        </div>
-
-        <p class="footer__copy">
-          &copy; <span id="footer-year"></span> Richa Rani. All rights reserved.
-        </p>
-
-      </div>
+      <div class="footer__logo">Richa Rani</div>
+      <p class="footer__text">Designed & Crafted with ✨ Cinderella Magic • 2026</p>
     </div>
   </footer>
 
-
-  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-       SCRIPTS
-  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-  <script>
-    // Set footer year
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-    // Reveal moon after page paints (smooth cinematic reveal)
-    (function revealMoon() {
-      const moon = document.getElementById('hero-moon');
-      if (!moon) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        moon.style.opacity = '0.55';
-        return;
-      }
-      // Stagger behind other hero entrance elements
-      setTimeout(() => { moon.style.opacity = '0.92'; }, 900);
-    })();
-
-    // ONE magic moment: hero last name shimmer fires once
-    (function heroNameShimmer() {
-      const nameLast = document.querySelector('.hero__name-last');
-      if (!nameLast) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      // Trigger after Stage 2 entrance (320ms) + animation duration
-      setTimeout(() => {
-        nameLast.classList.add('shimmer-once');
-        // Remove class after animation so it doesn't loop
-        nameLast.addEventListener('animationend', () => {
-          nameLast.classList.remove('shimmer-once');
-          // Restore italic colour without shimmer
-          nameLast.style.webkitTextFillColor = '';
-        }, { once: true });
-      }, 1400);
-    })();
-  </script>
-  <script src="js/particles.js" defer></script>
-  <script src="js/animations.js" defer></script>
-
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>
