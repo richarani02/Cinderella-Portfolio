@@ -1468,40 +1468,6 @@ body {
   }
 }
 
-/* Glass Crown Background (Left-Mid Side) */
-.projects__bg-crown {
-  position: absolute;
-  top: 48%;
-  left: -35px;
-  transform: translateY(-50%);
-  width: clamp(240px, 30vw, 460px);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.52;
-  filter: drop-shadow(0 0 25px rgba(214, 240, 255, 0.85))
-          drop-shadow(0 0 55px rgba(77, 168, 232, 0.45));
-  animation: crownFloatPulse 8s ease-in-out infinite alternate;
-}
-
-.projects__bg-crown img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@keyframes crownFloatPulse {
-  0% {
-    transform: translateY(-50%) rotate(0deg) scale(1);
-    filter: drop-shadow(0 0 20px rgba(169, 216, 245, 0.6)) drop-shadow(0 0 45px rgba(77, 168, 232, 0.35));
-    opacity: 0.46;
-  }
-  100% {
-    transform: translateY(-54%) rotate(-2deg) scale(1.04);
-    filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 75px rgba(169, 216, 245, 0.65));
-    opacity: 0.62;
-  }
-}
-
 /* 2. Education Section — Palace Castle & Shining Horse Background */
 #education {
   position: relative;
@@ -1568,6 +1534,66 @@ body {
   }
 }
 
+/* Education Section — Glass Crown (Left-Mid Side, Clearly Visible) */
+.education__bg-crown {
+  position: absolute;
+  top: 38%;
+  left: -20px;
+  width: clamp(220px, 28vw, 440px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.70;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.90))
+          drop-shadow(0 0 65px rgba(169, 216, 245, 0.75));
+  animation: crownFloatGlow 7s ease-in-out infinite alternate;
+}
+.education__bg-crown img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes crownFloatGlow {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 0.62;
+  }
+  100% {
+    transform: translateY(-10px) rotate(2deg) scale(1.03);
+    opacity: 0.78;
+  }
+}
+
+/* Projects Section — Cinderella Magic Mirror (Left Corner) */
+.projects__bg-mirror {
+  position: absolute;
+  top: 15%;
+  left: -25px;
+  width: clamp(200px, 24vw, 380px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.58;
+  filter: drop-shadow(0 0 25px rgba(214, 240, 255, 0.85))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.50));
+  animation: mirrorFloatGlow 8s ease-in-out infinite alternate;
+}
+.projects__bg-mirror img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes mirrorFloatGlow {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.50;
+  }
+  100% {
+    transform: translateY(-12px) rotate(-3deg);
+    opacity: 0.68;
+  }
+}
+
 /* Mobile Responsiveness for Section Backgrounds */
 @media (max-width: 768px) {
   .hero__bg-clock {
@@ -1595,14 +1621,19 @@ body {
     width: 260px;
     opacity: 0.30;
   }
-  .projects__bg-crown {
+  .projects__bg-mirror {
     left: -40px;
-    width: 200px;
-    opacity: 0.35;
+    width: 170px;
+    opacity: 0.40;
   }
   .education__bg-palace {
     width: 100%;
     opacity: 0.15;
+  }
+  .education__bg-crown {
+    left: -35px;
+    width: 180px;
+    opacity: 0.50;
   }
   .education__bg-horse {
     right: -20px;
@@ -1610,3 +1641,4 @@ body {
     opacity: 0.35;
   }
 }
+

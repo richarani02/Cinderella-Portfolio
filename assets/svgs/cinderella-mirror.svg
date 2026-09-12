@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 400" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Luminous Mirror Surface Gradient -->
+    <radialGradient id="mirrorReflect" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#E8F6FF" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#A9D8F5" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#4DA8E8" stop-opacity="0.60"/>
+    </radialGradient>
+
+    <!-- Ornate Frame Glass Gradient -->
+    <linearGradient id="mirrorFrameGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#A9D8F5"/>
+      <stop offset="100%" stop-color="#4DA8E8"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="mirrorGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D6"/>
+      <stop offset="50%" stop-color="#E5C778"/>
+      <stop offset="100%" stop-color="#B8943D"/>
+    </linearGradient>
+
+    <!-- Aura Radial Glow -->
+    <radialGradient id="mirrorGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E8F6FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#A9D8F5" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <!-- Sparkle Cross -->
+    <g id="mirrorSparkle">
+      <path d="M 0,-10 Q 0,0 10,0 Q 0,0 0,10 Q 0,0 -10,0 Q 0,0 0,-10 Z" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="2.5" fill="#E8F6FF"/>
+    </g>
+  </defs>
+
+  <!-- Aura Glow Backdrop -->
+  <ellipse cx="130" cy="180" rx="110" ry="160" fill="url(#mirrorGlow)"/>
+
+  <!-- Ornate Mirror Handle -->
+  <g fill="none" stroke="url(#mirrorFrameGlass)" stroke-linecap="round">
+    <!-- Main Handle Stem -->
+    <path d="M 130 260 L 130 370" stroke-width="12"/>
+    <path d="M 130 260 L 130 370" stroke="url(#mirrorGold)" stroke-width="4"/>
+    
+    <!-- Handle Bottom Finial Knob -->
+    <circle cx="130" cy="375" r="10" fill="url(#mirrorFrameGlass)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="130" cy="375" r="5" fill="url(#mirrorGold)"/>
+
+    <!-- Handle Ornate Side Scrolls -->
+    <path d="M 130 280 C 100 290 90 320 115 330 C 130 335 130 345 130 355" stroke-width="3"/>
+    <path d="M 130 280 C 160 290 170 320 145 330 C 130 335 130 345 130 355" stroke-width="3"/>
+  </g>
+
+  <!-- Mirror Outer Oval Frame -->
+  <ellipse cx="130" cy="140" rx="85" ry="115" fill="none" stroke="url(#mirrorFrameGlass)" stroke-width="14"/>
+  <ellipse cx="130" cy="140" rx="85" ry="115" fill="none" stroke="url(#mirrorGold)" stroke-width="3"/>
+
+  <!-- Mirror Inner Reflective Surface -->
+  <ellipse cx="130" cy="140" rx="72" ry="102" fill="url(#mirrorReflect)" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Reflection Shine Diagonal Streaks -->
+  <path d="M 90 70 Q 140 100 170 170" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 105 60 Q 150 90 180 150" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Frame Crown Crest & Scrollwork Peak -->
+  <!-- Top Crown Finial -->
+  <path d="M 110 28 Q 130 10 150 28 Q 130 20 110 28 Z" fill="url(#mirrorGold)" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="130" cy="12" r="5" fill="#FFFFFF"/>
+
+  <!-- Side Fleur-de-lis Frame Jewels -->
+  <circle cx="43" cy="140" r="6" fill="#FFFFFF"/>
+  <circle cx="43" cy="140" r="3" fill="#4DA8E8"/>
+
+  <circle cx="217" cy="140" r="6" fill="#FFFFFF"/>
+  <circle cx="217" cy="140" r="3" fill="#4DA8E8"/>
+
+  <circle cx="130" cy="256" r="7" fill="url(#mirrorGold)"/>
+  <circle cx="130" cy="256" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Sparkle Accents -->
+  <use href="#mirrorSparkle" x="130" y="8" transform="scale(1.3)"/>
+  <use href="#mirrorSparkle" x="43" y="125" transform="scale(1.1)"/>
+  <use href="#mirrorSparkle" x="217" y="125" transform="scale(1.1)"/>
+  <use href="#mirrorSparkle" x="110" y="90" transform="scale(1.2)"/>
+  <use href="#mirrorSparkle" x="150" y="160" transform="scale(1.3)"/>
+  <use href="#mirrorSparkle" x="130" y="375" transform="scale(1.2)"/>
+</svg>
