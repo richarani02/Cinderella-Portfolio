@@ -98,6 +98,16 @@
       <img src="assets/svgs/palace-arch.svg" alt="" role="presentation" width="600" height="200" loading="eager" />
     </div>
 
+    <!-- Crystal centerpiece focal point emblem -->
+    <div class="hero__crystal-center" aria-hidden="true">
+      <img src="assets/svgs/crystal-cluster.svg" alt="" role="presentation" width="160" height="160" loading="eager" />
+    </div>
+
+    <!-- Crescent moon — cinematic right-side focal point -->
+    <div class="hero__moon" aria-hidden="true" id="hero-moon">
+      <img src="assets/svgs/moon.svg" alt="" role="presentation" width="200" height="200" loading="eager" />
+    </div>
+
     <!-- Bottom floor line -->
     <div class="hero__floor" aria-hidden="true"></div>
 
@@ -785,6 +795,35 @@
   <script>
     // Set footer year
     document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // Reveal moon after page paints (smooth cinematic reveal)
+    (function revealMoon() {
+      const moon = document.getElementById('hero-moon');
+      if (!moon) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        moon.style.opacity = '0.55';
+        return;
+      }
+      // Stagger behind other hero entrance elements
+      setTimeout(() => { moon.style.opacity = '0.72'; }, 900);
+    })();
+
+    // ONE magic moment: hero last name shimmer fires once
+    (function heroNameShimmer() {
+      const nameLast = document.querySelector('.hero__name-last');
+      if (!nameLast) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      // Trigger after Stage 2 entrance (320ms) + animation duration
+      setTimeout(() => {
+        nameLast.classList.add('shimmer-once');
+        // Remove class after animation so it doesn't loop
+        nameLast.addEventListener('animationend', () => {
+          nameLast.classList.remove('shimmer-once');
+          // Restore italic colour without shimmer
+          nameLast.style.webkitTextFillColor = '';
+        }, { once: true });
+      }, 1400);
+    })();
   </script>
   <script src="js/particles.js" defer></script>
   <script src="js/animations.js" defer></script>
