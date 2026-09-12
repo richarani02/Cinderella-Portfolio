@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Luminous Light Blue Glass Pumpkin Gradient -->
+    <linearGradient id="carriageGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#D6F0FF" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#A9D8F5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4DA8E8" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Gold Scrollwork Gradient -->
+    <linearGradient id="carriageGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D6"/>
+      <stop offset="50%" stop-color="#E5C778"/>
+      <stop offset="100%" stop-color="#B8943D"/>
+    </linearGradient>
+
+    <!-- Light Blue Glow Radial -->
+    <radialGradient id="carriageGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8F6FF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#A9D8F5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <!-- Sparkle Cross -->
+    <g id="carriageSparkle">
+      <path d="M 0,-10 Q 0,0 10,0 Q 0,0 0,10 Q 0,0 -10,0 Q 0,0 0,-10 Z" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="2.5" fill="#E8F6FF"/>
+    </g>
+  </defs>
+
+  <!-- Ethereal Background Glow -->
+  <circle cx="200" cy="150" r="140" fill="url(#carriageGlow)"/>
+
+  <!-- Ornate Scrollwork Base Frame & Springs -->
+  <path d="M 90 220 Q 200 270 310 220" fill="none" stroke="url(#carriageGold)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 110 210 Q 200 250 290 210" fill="none" stroke="#D6F0FF" stroke-width="2"/>
+
+  <!-- Large Front & Rear Wheels (Spoke & Scrollwork) -->
+  <!-- Left Wheel (Back) -->
+  <g transform="translate(100, 220)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#carriageGold)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#D6F0FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="8" fill="url(#carriageGold)"/>
+    <!-- Wheel Spokes -->
+    <path d="M 0 -45 L 0 45 M -45 0 L 45 0 M -32 -32 L 32 32 M -32 32 L 32 -32" stroke="url(#carriageGold)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Wheel (Front) -->
+  <g transform="translate(300, 220)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#carriageGold)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#D6F0FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="8" fill="url(#carriageGold)"/>
+    <!-- Wheel Spokes -->
+    <path d="M 0 -45 L 0 45 M -45 0 L 45 0 M -32 -32 L 32 32 M -32 32 L 32 -32" stroke="url(#carriageGold)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Main Pumpkin Body (Luminous Glass Lobes) -->
+  <g fill="url(#carriageGlass)" stroke="#FFFFFF" stroke-width="1.5">
+    <!-- Outer Left Lobe -->
+    <ellipse cx="150" cy="130" rx="35" ry="55" transform="rotate(-15 150 130)"/>
+    <!-- Outer Right Lobe -->
+    <ellipse cx="250" cy="130" rx="35" ry="55" transform="rotate(15 250 130)"/>
+    <!-- Inner Left Lobe -->
+    <ellipse cx="175" cy="125" rx="32" ry="60" transform="rotate(-7 175 125)"/>
+    <!-- Inner Right Lobe -->
+    <ellipse cx="225" cy="125" rx="32" ry="60" transform="rotate(7 225 125)"/>
+    <!-- Center Main Pumpkin Lobe -->
+    <ellipse cx="200" cy="120" rx="35" ry="63"/>
+  </g>
+
+  <!-- Carriage Door Window (Heart/Oval Arched) -->
+  <ellipse cx="200" cy="120" rx="22" ry="28" fill="#111A3A" stroke="url(#carriageGold)" stroke-width="3"/>
+  <ellipse cx="200" cy="120" rx="18" ry="24" fill="rgba(214, 240, 255, 0.4)" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- Curtains in window -->
+  <path d="M 182 96 Q 192 110 182 124 M 218 96 Q 208 110 218 124" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+
+  <!-- Carriage Roof Crown & Finial -->
+  <path d="M 185 57 Q 200 35 215 57" fill="none" stroke="url(#carriageGold)" stroke-width="3"/>
+  <polygon points="200,25 206,37 218,37 208,44 212,56 200,48 188,56 192,44 182,37 194,37" fill="url(#carriageGold)"/>
+  <circle cx="200" cy="25" r="4" fill="#FFFFFF"/>
+
+  <!-- Ornate Lanterns (Left & Right) -->
+  <!-- Left Lantern -->
+  <g transform="translate(110, 110)">
+    <line x1="0" y1="0" x2="-15" y2="-10" stroke="url(#carriageGold)" stroke-width="2"/>
+    <polygon points="-20,-22 -10,-22 -12,-8 -18,-8" fill="#D6F0FF" stroke="url(#carriageGold)" stroke-width="1"/>
+    <circle cx="-15" cy="-15" r="4" fill="#FFFFFF"/>
+  </g>
+  <!-- Right Lantern -->
+  <g transform="translate(290, 110)">
+    <line x1="0" y1="0" x2="15" y2="-10" stroke="url(#carriageGold)" stroke-width="2"/>
+    <polygon points="10,-22 20,-22 18,-8 12,-8" fill="#D6F0FF" stroke="url(#carriageGold)" stroke-width="1"/>
+    <circle cx="15" cy="-15" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Sparkle Accents -->
+  <use href="#carriageSparkle" x="200" y="15" transform="scale(1.3)"/>
+  <use href="#carriageSparkle" x="95" y="90"/>
+  <use href="#carriageSparkle" x="305" y="90"/>
+  <use href="#carriageSparkle" x="140" y="180"/>
+  <use href="#carriageSparkle" x="260" y="180"/>
+  <use href="#carriageSparkle" x="200" y="225" transform="scale(1.2)"/>
+</svg>

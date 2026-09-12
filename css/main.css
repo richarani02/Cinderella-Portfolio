@@ -1243,46 +1243,268 @@ body {
   }
 }
 
-/* 3. Contact Section — Glass Slipper Background */
-#contact {
-  position: relative;
-  overflow: hidden;
-}
+/* ══════════════════════════════════════════════════════════
+   SECTION-SPECIFIC CINDERELLA BACKGROUND DECORATIONS
+   ══════════════════════════════════════════════════════════ */
 
-.contact__bg-slipper {
+/* Hero Section — Shining Clock (Top Left Corner) */
+.hero__bg-clock {
   position: absolute;
-  bottom: 15px;
-  right: 4%;
-  width: clamp(220px, 26vw, 400px);
+  top: 75px;
+  left: 35px;
+  width: clamp(140px, 18vw, 260px);
   pointer-events: none;
-  z-index: 0;
-  opacity: 0.50;
-  filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.75))
-          drop-shadow(0 0 55px rgba(77, 168, 232, 0.45));
-  animation: contactSlipperFloat 6s ease-in-out infinite alternate;
+  z-index: 1;
+  opacity: 0.75;
+  filter: drop-shadow(0 0 25px rgba(214, 240, 255, 0.85))
+          drop-shadow(0 0 50px rgba(169, 216, 245, 0.60));
+  animation: clockGlowFloat 8s ease-in-out infinite alternate;
 }
-
-.contact__bg-slipper img {
+.hero__bg-clock img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-@keyframes contactSlipperFloat {
+@keyframes clockGlowFloat {
   0% {
     transform: translateY(0) rotate(0deg);
-    filter: drop-shadow(0 0 20px rgba(169, 216, 245, 0.6));
-    opacity: 0.45;
+    filter: drop-shadow(0 0 20px rgba(214, 240, 255, 0.75)) drop-shadow(0 0 40px rgba(169, 216, 245, 0.50));
+    opacity: 0.70;
   }
   100% {
-    transform: translateY(-15px) rotate(-3deg);
-    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.90)) drop-shadow(0 0 75px rgba(169, 216, 245, 0.65));
+    transform: translateY(-12px) rotate(4deg);
+    filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 70px rgba(77, 168, 232, 0.75));
+    opacity: 0.90;
+  }
+}
+
+/* About Section — Pumpkin Carriage & Cinderella */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__bg-carriage {
+  position: absolute;
+  top: 10%;
+  right: -30px;
+  width: clamp(260px, 32vw, 480px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 30px rgba(169, 216, 245, 0.75))
+          drop-shadow(0 0 60px rgba(77, 168, 232, 0.45));
+  animation: carriageFloat 7s ease-in-out infinite alternate;
+}
+.about__bg-carriage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes carriageFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.48;
+  }
+  100% {
+    transform: translateY(-15px) rotate(2deg);
+    opacity: 0.65;
+  }
+}
+
+.about__bg-cinderella {
+  position: absolute;
+  bottom: 5%;
+  left: -20px;
+  width: clamp(180px, 22vw, 340px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 25px rgba(214, 240, 255, 0.80))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.50));
+  animation: cinSway 9s ease-in-out infinite alternate;
+}
+.about__bg-cinderella img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes cinSway {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.48;
+  }
+  100% {
+    transform: translateY(-10px) rotate(-2deg);
+    opacity: 0.65;
+  }
+}
+
+/* Skills Section — Glass Stairs */
+#skills {
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__bg-stairs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(320px, 40vw, 620px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.50;
+  filter: drop-shadow(0 0 30px rgba(169, 216, 245, 0.70))
+          drop-shadow(0 0 60px rgba(77, 168, 232, 0.40));
+  animation: stairsGlowPulse 8s ease-in-out infinite alternate;
+}
+.skills__bg-stairs img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes stairsGlowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.42;
+  }
+  100% {
+    transform: scale(1.02);
+    opacity: 0.60;
+  }
+}
+
+/* 1. Projects Section — Shining Light-Blue Tree (Right Side) */
+#projects {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__bg-tree {
+  position: absolute;
+  top: 45%;
+  right: -50px;
+  transform: translateY(-50%);
+  width: clamp(280px, 34vw, 520px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.48;
+  filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.65))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.35));
+  animation: treeSparkleFloat 7s ease-in-out infinite alternate;
+}
+
+.projects__bg-tree img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes treeSparkleFloat {
+  0% {
+    transform: translateY(-50%) rotate(0deg) scale(1);
+    filter: drop-shadow(0 0 20px rgba(169, 216, 245, 0.5)) drop-shadow(0 0 40px rgba(77, 168, 232, 0.25));
+    opacity: 0.42;
+  }
+  100% {
+    transform: translateY(-53%) rotate(1.5deg) scale(1.03);
+    filter: drop-shadow(0 0 35px rgba(214, 240, 255, 0.85)) drop-shadow(0 0 70px rgba(169, 216, 245, 0.55));
+    opacity: 0.58;
+  }
+}
+
+/* 2. Education Section — Palace Castle & Shining Horse Background */
+#education {
+  position: relative;
+  overflow: hidden;
+}
+
+.education__bg-palace {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(480px, 75vw, 1050px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.22;
+  filter: drop-shadow(0 0 30px rgba(65, 105, 161, 0.45))
+          drop-shadow(0 0 60px rgba(169, 216, 245, 0.3));
+  animation: palaceGlowPulse 10s ease-in-out infinite alternate;
+}
+
+.education__bg-palace img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes palaceGlowPulse {
+  0% {
+    opacity: 0.18;
+    filter: drop-shadow(0 0 20px rgba(65, 105, 161, 0.3));
+  }
+  100% {
+    opacity: 0.28;
+    filter: drop-shadow(0 0 45px rgba(169, 216, 245, 0.55)) drop-shadow(0 0 80px rgba(77, 168, 232, 0.35));
+  }
+}
+
+.education__bg-horse {
+  position: absolute;
+  bottom: 20px;
+  right: 3%;
+  width: clamp(240px, 28vw, 440px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 25px rgba(214, 240, 255, 0.85))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.50));
+  animation: horsePranceFloat 7s ease-in-out infinite alternate;
+}
+.education__bg-horse img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes horsePranceFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.48;
+  }
+  100% {
+    transform: translateY(-14px) rotate(-2deg);
     opacity: 0.65;
   }
 }
 
 /* Mobile Responsiveness for Section Backgrounds */
 @media (max-width: 768px) {
+  .hero__bg-clock {
+    top: 50px;
+    left: 10px;
+    width: 130px;
+    opacity: 0.60;
+  }
+  .about__bg-carriage {
+    right: -40px;
+    width: 220px;
+    opacity: 0.35;
+  }
+  .about__bg-cinderella {
+    left: -30px;
+    width: 160px;
+    opacity: 0.35;
+  }
+  .skills__bg-stairs {
+    width: 260px;
+    opacity: 0.30;
+  }
   .projects__bg-tree {
     right: -80px;
     width: 260px;
@@ -1292,10 +1514,9 @@ body {
     width: 100%;
     opacity: 0.15;
   }
-  .contact__bg-slipper {
-    right: -25px;
-    bottom: -10px;
-    width: 190px;
+  .education__bg-horse {
+    right: -20px;
+    width: 180px;
     opacity: 0.35;
   }
 }
