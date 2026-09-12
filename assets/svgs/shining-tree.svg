@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Light blue shining tree trunk & branch gradient -->
+    <linearGradient id="treeTrunkGrad" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#21487F" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#4DA8E8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#A9D8F5" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Luminous foliage aura -->
+    <radialGradient id="foliageGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D6F0FF" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#A9D8F5" stop-opacity="0.35"/>
+      <stop offset="80%" stop-color="#4DA8E8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#111A3A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Star glitter symbol -->
+    <g id="treeSparkle">
+      <path d="M 0,-12 Q 0,0 12,0 Q 0,0 0,12 Q 0,0 -12,0 Q 0,0 0,-12 Z" fill="#E8F6FF"/>
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+    </g>
+    <g id="treeStarGold">
+      <path d="M 0,-8 Q 0,0 8,0 Q 0,0 0,8 Q 0,0 -8,0 Q 0,0 0,-8 Z" fill="#FCE8B2"/>
+    </g>
+  </defs>
+
+  <!-- Ethereal Background Glow -->
+  <circle cx="210" cy="240" r="180" fill="url(#foliageGlow)"/>
+
+  <!-- Tree Trunk & Main Branches -->
+  <g fill="none" stroke="url(#treeTrunkGrad)" stroke-linecap="round">
+    <!-- Main Trunk Base -->
+    <path d="M 170 580 Q 200 480 200 360 Q 200 280 210 200" stroke-width="18"/>
+    <path d="M 210 580 Q 205 490 200 360" stroke-width="12"/>
+    <path d="M 140 580 Q 180 520 195 430" stroke-width="8"/>
+    <path d="M 250 580 Q 220 510 205 430" stroke-width="7"/>
+
+    <!-- Left Main Branch -->
+    <path d="M 200 360 Q 150 310 90 290 Q 50 280 20 300" stroke-width="9"/>
+    <path d="M 130 305 Q 90 250 50 230" stroke-width="5"/>
+    <path d="M 100 292 Q 80 340 40 360" stroke-width="4"/>
+
+    <!-- Center Upper Branches -->
+    <path d="M 200 300 Q 210 200 180 130 Q 160 90 120 70" stroke-width="8"/>
+    <path d="M 195 210 Q 230 140 260 90 Q 280 60 330 50" stroke-width="7"/>
+    <path d="M 185 140 Q 160 100 170 50" stroke-width="4"/>
+    <path d="M 225 145 Q 210 90 230 40" stroke-width="4"/>
+
+    <!-- Right Main Branch -->
+    <path d="M 200 350 Q 260 310 320 300 Q 360 295 390 320" stroke-width="9"/>
+    <path d="M 270 308 Q 320 255 360 235" stroke-width="5"/>
+    <path d="M 295 303 Q 320 350 365 375" stroke-width="4"/>
+  </g>
+
+  <!-- Glowing Canopy Clusters (Soft Light Blue Bubbles) -->
+  <g opacity="0.45">
+    <circle cx="120" cy="70" r="35" fill="#A9D8F5"/>
+    <circle cx="170" cy="50" r="30" fill="#D6F0FF"/>
+    <circle cx="230" cy="40" r="32" fill="#A9D8F5"/>
+    <circle cx="330" cy="50" r="38" fill="#D6F0FF"/>
+    <circle cx="50" cy="230" r="40" fill="#A9D8F5"/>
+    <circle cx="90" cy="250" r="45" fill="#D6F0FF"/>
+    <circle cx="360" cy="235" r="42" fill="#D6F0FF"/>
+    <circle cx="320" cy="255" r="40" fill="#A9D8F5"/>
+    <circle cx="180" cy="130" r="50" fill="#E8F6FF"/>
+    <circle cx="260" cy="90" r="48" fill="#A9D8F5"/>
+  </g>
+
+  <!-- Sparkle Stars Canopy Layer -->
+  <use href="#treeSparkle" x="120" y="70" transform="scale(1.2)"/>
+  <use href="#treeSparkle" x="170" y="50"/>
+  <use href="#treeSparkle" x="230" y="40" transform="scale(1.3)"/>
+  <use href="#treeSparkle" x="330" y="50" transform="scale(1.1)"/>
+  <use href="#treeSparkle" x="50" y="230" transform="scale(1.4)"/>
+  <use href="#treeSparkle" x="90" y="250"/>
+  <use href="#treeSparkle" x="360" y="235" transform="scale(1.2)"/>
+  <use href="#treeSparkle" x="320" y="255"/>
+  <use href="#treeSparkle" x="180" y="130" transform="scale(1.5)"/>
+  <use href="#treeSparkle" x="260" y="90" transform="scale(1.3)"/>
+  <use href="#treeSparkle" x="210" y="200" transform="scale(1.4)"/>
+
+  <!-- Additional Star & Gold Accents -->
+  <use href="#treeStarGold" x="150" y="90"/>
+  <use href="#treeStarGold" x="290" y="70"/>
+  <use href="#treeStarGold" x="70" y="210"/>
+  <use href="#treeStarGold" x="340" y="210"/>
+  <use href="#treeStarGold" x="200" y="160"/>
+  <use href="#treeStarGold" x="240" y="240"/>
+
+  <!-- Falling Magic Sparkle Particles -->
+  <g fill="#E8F6FF" opacity="0.85">
+    <circle cx="80" cy="310" r="2.5"/>
+    <circle cx="110" cy="350" r="1.5"/>
+    <circle cx="60" cy="380" r="2"/>
+    <circle cx="140" cy="420" r="2.5"/>
+    <circle cx="280" cy="330" r="2"/>
+    <circle cx="330" cy="360" r="3"/>
+    <circle cx="310" cy="410" r="1.5"/>
+    <circle cx="350" cy="450" r="2.5"/>
+    <circle cx="190" cy="270" r="3"/>
+    <circle cx="220" cy="320" r="2"/>
+  </g>
+</svg>

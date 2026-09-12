@@ -1162,3 +1162,140 @@ body {
   .bg-deco--cinderella { width: 95px; }
   .bg-deco--cinderella .bg-deco__img { opacity: 0.40; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   SECTION-SPECIFIC CINDERELLA BACKGROUND DECORATIONS
+   ══════════════════════════════════════════════════════════ */
+
+/* 1. Projects Section — Shining Light-Blue Tree (Right Side) */
+#projects {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__bg-tree {
+  position: absolute;
+  top: 45%;
+  right: -50px;
+  transform: translateY(-50%);
+  width: clamp(280px, 34vw, 520px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.48;
+  filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.65))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.35));
+  animation: treeSparkleFloat 7s ease-in-out infinite alternate;
+}
+
+.projects__bg-tree img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes treeSparkleFloat {
+  0% {
+    transform: translateY(-50%) rotate(0deg) scale(1);
+    filter: drop-shadow(0 0 20px rgba(169, 216, 245, 0.5)) drop-shadow(0 0 40px rgba(77, 168, 232, 0.25));
+    opacity: 0.42;
+  }
+  100% {
+    transform: translateY(-53%) rotate(1.5deg) scale(1.03);
+    filter: drop-shadow(0 0 35px rgba(214, 240, 255, 0.85)) drop-shadow(0 0 70px rgba(169, 216, 245, 0.55));
+    opacity: 0.58;
+  }
+}
+
+/* 2. Education Section — Palace / Castle Background */
+#education {
+  position: relative;
+  overflow: hidden;
+}
+
+.education__bg-palace {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(480px, 75vw, 1050px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.22;
+  filter: drop-shadow(0 0 30px rgba(65, 105, 161, 0.45))
+          drop-shadow(0 0 60px rgba(169, 216, 245, 0.3));
+  animation: palaceGlowPulse 10s ease-in-out infinite alternate;
+}
+
+.education__bg-palace img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes palaceGlowPulse {
+  0% {
+    opacity: 0.18;
+    filter: drop-shadow(0 0 20px rgba(65, 105, 161, 0.3));
+  }
+  100% {
+    opacity: 0.28;
+    filter: drop-shadow(0 0 45px rgba(169, 216, 245, 0.55)) drop-shadow(0 0 80px rgba(77, 168, 232, 0.35));
+  }
+}
+
+/* 3. Contact Section — Glass Slipper Background */
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__bg-slipper {
+  position: absolute;
+  bottom: 15px;
+  right: 4%;
+  width: clamp(220px, 26vw, 400px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.50;
+  filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.75))
+          drop-shadow(0 0 55px rgba(77, 168, 232, 0.45));
+  animation: contactSlipperFloat 6s ease-in-out infinite alternate;
+}
+
+.contact__bg-slipper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes contactSlipperFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    filter: drop-shadow(0 0 20px rgba(169, 216, 245, 0.6));
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(-15px) rotate(-3deg);
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.90)) drop-shadow(0 0 75px rgba(169, 216, 245, 0.65));
+    opacity: 0.65;
+  }
+}
+
+/* Mobile Responsiveness for Section Backgrounds */
+@media (max-width: 768px) {
+  .projects__bg-tree {
+    right: -80px;
+    width: 260px;
+    opacity: 0.30;
+  }
+  .education__bg-palace {
+    width: 100%;
+    opacity: 0.15;
+  }
+  .contact__bg-slipper {
+    right: -25px;
+    bottom: -10px;
+    width: 190px;
+    opacity: 0.35;
+  }
+}
