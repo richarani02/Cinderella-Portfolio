@@ -987,3 +987,161 @@ body {
   0% { transform: scale(1) rotate(0deg); opacity: 1; }
   100% { transform: scale(0) rotate(90deg); opacity: 0; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   FIXED BACKGROUND DECORATIONS
+   Glass Slipper (bottom-right) + Cinderella (bottom-left)
+   Both sit at z-index 0 — behind all page content
+   ══════════════════════════════════════════════════════════ */
+
+/* Shared base */
+.bg-deco {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bg-deco__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Shared halo — glowing radial behind each figure */
+.bg-deco__halo {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(65, 105, 161, 0.22) 0%,
+    rgba(169, 216, 245, 0.12) 40%,
+    transparent 72%
+  );
+  filter: blur(45px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Glass Slipper — bottom-right ─────────────────────── */
+.bg-deco--slipper {
+  bottom: -55px;
+  right: -70px;
+  width: clamp(260px, 32vw, 480px);
+  animation: bgSlipFloat 8s ease-in-out infinite alternate;
+}
+
+.bg-deco--slipper .bg-deco__halo {
+  inset: -35%;
+  background: radial-gradient(
+    circle,
+    rgba(65, 105, 161, 0.25) 0%,
+    rgba(169, 216, 245, 0.14) 38%,
+    rgba(217, 184, 108, 0.06) 60%,
+    transparent 78%
+  );
+}
+
+.bg-deco--slipper .bg-deco__img {
+  opacity: 0.45;
+  filter: drop-shadow(0 0 28px rgba(169, 216, 245, 0.45))
+          drop-shadow(0 0 60px rgba(65, 105, 161, 0.28));
+  animation: bgSlipGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes bgSlipFloat {
+  0%   { transform: translateY(0)     rotate(0deg);   }
+  100% { transform: translateY(-24px) rotate(-2.5deg); }
+}
+
+@keyframes bgSlipGlow {
+  0% {
+    filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.40))
+            drop-shadow(0 0 55px rgba(65, 105, 161, 0.22));
+    opacity: 0.40;
+  }
+  100% {
+    filter: drop-shadow(0 0 45px rgba(169, 216, 245, 0.65))
+            drop-shadow(0 0 90px rgba(217, 184, 108, 0.30));
+    opacity: 0.55;
+  }
+}
+
+/* ── Cinderella Silhouette — bottom-left ──────────────── */
+.bg-deco--cinderella {
+  bottom: 0;
+  left: -30px;
+  width: clamp(150px, 18vw, 290px);
+  animation: bgCinSway 10s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+.bg-deco--cinderella .bg-deco__halo--cin {
+  bottom: -10%;
+  left: -50%;
+  right: -50%;
+  top: -20%;
+  background: radial-gradient(
+    circle at 50% 70%,
+    rgba(217, 184, 108, 0.20) 0%,
+    rgba(65, 105, 161, 0.14) 40%,
+    transparent 72%
+  );
+}
+
+.bg-deco--cinderella .bg-deco__img {
+  opacity: 0.38;
+  filter: drop-shadow(0 0 22px rgba(169, 216, 245, 0.40))
+          drop-shadow(0 0 50px rgba(217, 184, 108, 0.25));
+  animation: bgCinGlow 10s ease-in-out infinite alternate;
+}
+
+/* Very gentle sway — like a dress catching a breeze */
+@keyframes bgCinSway {
+  0%   { transform: rotate(0deg)    translateY(0);     }
+  33%  { transform: rotate(0.8deg)  translateY(-6px);  }
+  66%  { transform: rotate(-0.6deg) translateY(-10px); }
+  100% { transform: rotate(1deg)    translateY(-5px);  }
+}
+
+@keyframes bgCinGlow {
+  0% {
+    filter: drop-shadow(0 0 18px rgba(169, 216, 245, 0.35))
+            drop-shadow(0 0 40px rgba(217, 184, 108, 0.18));
+    opacity: 0.32;
+  }
+  100% {
+    filter: drop-shadow(0 0 35px rgba(169, 216, 245, 0.55))
+            drop-shadow(0 0 70px rgba(217, 184, 108, 0.35));
+    opacity: 0.48;
+  }
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .bg-deco--slipper    { width: clamp(200px, 28vw, 360px); }
+  .bg-deco--cinderella { width: clamp(120px, 16vw, 230px); }
+}
+
+@media (max-width: 768px) {
+  .bg-deco--slipper {
+    width: clamp(160px, 38vw, 260px);
+    bottom: -35px;
+    right: -45px;
+  }
+  .bg-deco--slipper .bg-deco__img  { opacity: 0.30; }
+
+  .bg-deco--cinderella {
+    width: clamp(100px, 22vw, 180px);
+    left: -20px;
+  }
+  .bg-deco--cinderella .bg-deco__img { opacity: 0.25; }
+}
+
+@media (max-width: 480px) {
+  /* On very small screens reduce further so they don't crowd content */
+  .bg-deco--slipper    { width: 140px; opacity: 0.80; }
+  .bg-deco--cinderella { width: 90px;  opacity: 0.80; }
+}

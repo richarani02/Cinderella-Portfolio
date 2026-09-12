@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 420" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Body gradient — Cinderella Blue to Royal Blue -->
+    <linearGradient id="cinBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#A9D8F5" stop-opacity="0.55"/>
+      <stop offset="60%"  stop-color="#4169A1" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#111A3A" stop-opacity="0.50"/>
+    </linearGradient>
+    <!-- Gown gradient — wider, more luminous -->
+    <linearGradient id="cinGown" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%"   stop-color="#A9D8F5" stop-opacity="0.40"/>
+      <stop offset="35%"  stop-color="#FFF9F0" stop-opacity="0.18"/>
+      <stop offset="70%"  stop-color="#4169A1" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#111A3A" stop-opacity="0.45"/>
+    </linearGradient>
+    <!-- Gown shine -->
+    <linearGradient id="cinShine" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF9F0" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#FFF9F0" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Hair -->
+    <linearGradient id="cinHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#D9B86C" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#A9D8F5" stop-opacity="0.35"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="cinGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cinSoftGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.663  0 0 0 0 0.847  0 0 0 0 0.961  0 0 0 0.45 0" result="colGlow"/>
+      <feMerge><feMergeNode in="colGlow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── GOWN (layered full skirt) ───────────────────────────── -->
+  <!-- Outer skirt layer — widest, most transparent -->
+  <path d="M 100 230 Q 10 290 0 390 Q 5 420 100 418 Q 195 420 200 390 Q 190 290 100 230 Z"
+        fill="url(#cinGown)" stroke="rgba(169,216,245,0.22)" stroke-width="1"
+        filter="url(#cinSoftGlow)"/>
+
+  <!-- Mid skirt layer -->
+  <path d="M 100 235 Q 30 285 25 375 Q 40 408 100 410 Q 160 408 175 375 Q 170 285 100 235 Z"
+        fill="url(#cinGown)" stroke="rgba(169,216,245,0.18)" stroke-width="0.8"/>
+
+  <!-- Inner skirt — most opaque, shows structure -->
+  <path d="M 100 240 Q 55 278 52 360 Q 62 395 100 398 Q 138 395 148 360 Q 145 278 100 240 Z"
+        fill="url(#cinBody)" stroke="rgba(169,216,245,0.28)" stroke-width="1"/>
+
+  <!-- Gown shine highlight left -->
+  <path d="M 70 250 Q 45 295 48 360 Q 55 300 75 265 Z"
+        fill="url(#cinShine)" opacity="0.6"/>
+
+  <!-- Gown shine highlight right -->
+  <path d="M 130 250 Q 155 295 152 360 Q 145 300 125 265 Z"
+        fill="url(#cinShine)" opacity="0.35"/>
+
+  <!-- Waist tier ruffle line -->
+  <path d="M 68 255 Q 100 248 132 255" fill="none" stroke="rgba(169,216,245,0.35)" stroke-width="1.2"/>
+  <!-- Second tier ruffle -->
+  <path d="M 55 290 Q 100 280 145 290" fill="none" stroke="rgba(169,216,245,0.28)" stroke-width="1"/>
+  <!-- Third tier ruffle -->
+  <path d="M 38 330 Q 100 318 162 330" fill="none" stroke="rgba(169,216,245,0.22)" stroke-width="0.8"/>
+
+  <!-- ── BODICE / TORSO ─────────────────────────────────────── -->
+  <path d="M 78 170 Q 68 195 70 230 Q 85 240 100 240 Q 115 240 130 230 Q 132 195 122 170 Z"
+        fill="url(#cinBody)" stroke="rgba(169,216,245,0.40)" stroke-width="1.2"
+        filter="url(#cinGlow)"/>
+
+  <!-- Bodice shine -->
+  <path d="M 82 175 Q 76 195 78 220 Q 88 215 90 185 Z"
+        fill="rgba(255,249,240,0.28)"/>
+
+  <!-- Waist belt hint -->
+  <path d="M 74 227 Q 100 222 126 227" fill="none" stroke="rgba(217,184,108,0.45)" stroke-width="1.5"/>
+
+  <!-- ── ARMS ────────────────────────────────────────────────── -->
+  <!-- Left arm (reaching slightly up) -->
+  <path d="M 78 175 Q 55 165 42 148 Q 38 142 44 138 Q 50 134 56 142 Q 65 158 82 185 Z"
+        fill="url(#cinBody)" stroke="rgba(169,216,245,0.30)" stroke-width="0.8"/>
+
+  <!-- Right arm (down) -->
+  <path d="M 122 175 Q 142 182 148 195 Q 152 200 148 204 Q 144 208 140 202 Q 134 190 118 182 Z"
+        fill="url(#cinBody)" stroke="rgba(169,216,245,0.30)" stroke-width="0.8"/>
+
+  <!-- ── NECK & HEAD ─────────────────────────────────────────── -->
+  <!-- Neck -->
+  <rect x="93" y="148" width="14" height="26" rx="6"
+        fill="url(#cinBody)" stroke="rgba(169,216,245,0.35)" stroke-width="0.8"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="128" rx="26" ry="30"
+           fill="url(#cinBody)" stroke="rgba(169,216,245,0.45)" stroke-width="1.2"
+           filter="url(#cinGlow)"/>
+
+  <!-- Face highlight -->
+  <ellipse cx="93" cy="120" rx="10" ry="12" fill="rgba(255,249,240,0.22)"/>
+
+  <!-- ── HAIR / UPDO ─────────────────────────────────────────── -->
+  <!-- Back hair mass -->
+  <ellipse cx="100" cy="110" rx="28" ry="25"
+           fill="url(#cinHair)" opacity="0.55"/>
+
+  <!-- Updo bun top -->
+  <ellipse cx="100" cy="92" rx="16" ry="14"
+           fill="url(#cinHair)" stroke="rgba(217,184,108,0.40)" stroke-width="0.8"
+           filter="url(#cinGlow)"/>
+
+  <!-- Hair strand left -->
+  <path d="M 74 115 Q 66 108 70 98 Q 74 90 80 96" fill="none"
+        stroke="rgba(217,184,108,0.45)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hair strand right -->
+  <path d="M 126 115 Q 134 108 130 98 Q 126 90 120 96" fill="none"
+        stroke="rgba(217,184,108,0.45)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Crown / tiara -->
+  <path d="M 86 96 L 88 82 L 94 90 L 100 76 L 106 90 L 112 82 L 114 96"
+        fill="none" stroke="rgba(217,184,108,0.70)" stroke-width="1.8"
+        stroke-linejoin="round" stroke-linecap="round"
+        filter="url(#cinGlow)"/>
+  <!-- Crown gems -->
+  <circle cx="100" cy="77" r="2.5" fill="#D9B86C" opacity="0.80"/>
+  <circle cx="88"  cy="83" r="1.8" fill="#A9D8F5" opacity="0.70"/>
+  <circle cx="112" cy="83" r="1.8" fill="#A9D8F5" opacity="0.70"/>
+
+  <!-- ── MAGIC WAND ──────────────────────────────────────────── -->
+  <!-- Wand stick -->
+  <line x1="44" y1="139" x2="28" y2="112"
+        stroke="rgba(217,184,108,0.60)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Wand star -->
+  <polygon points="28,104 30,110 36,110 31,114 33,120 28,116 23,120 25,114 20,110 26,110"
+           fill="#D9B86C" opacity="0.80" filter="url(#cinGlow)"/>
+  <!-- Wand sparkles -->
+  <circle cx="18" cy="104" r="1.5" fill="#FFF9F0" opacity="0.70"/>
+  <circle cx="38" cy="100" r="1.2" fill="#A9D8F5" opacity="0.65"/>
+  <circle cx="14" cy="114" r="1.0" fill="#D9B86C" opacity="0.60"/>
+
+  <!-- ── SCATTERED SPARKLES ─────────────────────────────────── -->
+  <g opacity="0.70">
+    <circle cx="158" cy="180" r="1.5" fill="#D9B86C"/>
+    <circle cx="162" cy="160" r="1.0" fill="#A9D8F5"/>
+    <circle cx="150" cy="195" r="1.2" fill="#FFF9F0"/>
+    <circle cx="35"  cy="200" r="1.5" fill="#D9B86C"/>
+    <circle cx="28"  cy="225" r="1.0" fill="#A9D8F5"/>
+    <circle cx="165" cy="260" r="1.2" fill="#D9B86C"/>
+    <circle cx="22"  cy="170" r="0.8" fill="#FFF9F0"/>
+  </g>
+</svg>
