@@ -2,13 +2,13 @@
   <defs>
     <!-- Subtle waxing-crescent moon glow -->
     <radialGradient id="moonBody" cx="52%" cy="48%" r="50%">
-      <stop offset="0%"   stop-color="rgba(238, 240, 245, 0.95)"/>
-      <stop offset="55%"  stop-color="rgba(200, 216, 245, 0.75)"/>
-      <stop offset="100%" stop-color="rgba(200, 216, 245, 0.0)"/>
+      <stop offset="0%"   stop-color="rgba(255, 249, 240, 0.95)"/>
+      <stop offset="55%"  stop-color="rgba(169, 216, 245, 0.75)"/>
+      <stop offset="100%" stop-color="rgba(169, 216, 245, 0.0)"/>
     </radialGradient>
     <radialGradient id="moonAtmo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="rgba(200, 216, 245, 0.18)"/>
-      <stop offset="65%"  stop-color="rgba(200, 216, 245, 0.06)"/>
+      <stop offset="0%"   stop-color="rgba(169, 216, 245, 0.18)"/>
+      <stop offset="65%"  stop-color="rgba(169, 216, 245, 0.06)"/>
       <stop offset="100%" stop-color="transparent"/>
     </radialGradient>
     <filter id="softBlur">
@@ -25,33 +25,33 @@
 
   <!-- Atmospheric corona / halo -->
   <circle cx="100" cy="100" r="90" fill="url(#moonAtmo)" filter="url(#innerGlow)"/>
-  <circle cx="100" cy="100" r="76" fill="rgba(200, 216, 245, 0.04)" filter="url(#softBlur)"/>
+  <circle cx="100" cy="100" r="76" fill="rgba(169, 216, 245, 0.04)" filter="url(#softBlur)"/>
 
   <!-- Moon disc -->
   <circle cx="100" cy="100" r="62" fill="url(#moonBody)"/>
 
   <!-- Shadow creating crescent shape (offset circle in dark tone) -->
-  <circle cx="118" cy="96" r="56" fill="rgba(6, 7, 26, 0.88)" clip-path="url(#moonClip)"/>
+  <circle cx="118" cy="96" r="56" fill="rgba(17, 26, 58, 0.88)" clip-path="url(#moonClip)"/>
 
   <!-- Very subtle surface texture suggestions -->
-  <circle cx="68"  cy="88"  r="5"   fill="rgba(100, 114, 138, 0.12)" clip-path="url(#moonClip)"/>
-  <circle cx="82"  cy="112" r="3.5" fill="rgba(100, 114, 138, 0.08)" clip-path="url(#moonClip)"/>
-  <circle cx="60"  cy="108" r="7"   fill="rgba(100, 114, 138, 0.07)" clip-path="url(#moonClip)"/>
-  <circle cx="75"  cy="72"  r="4"   fill="rgba(100, 114, 138, 0.09)" clip-path="url(#moonClip)"/>
+  <circle cx="68"  cy="88"  r="5"   fill="rgba(90, 122, 150, 0.12)" clip-path="url(#moonClip)"/>
+  <circle cx="82"  cy="112" r="3.5" fill="rgba(90, 122, 150, 0.08)" clip-path="url(#moonClip)"/>
+  <circle cx="60"  cy="108" r="7"   fill="rgba(90, 122, 150, 0.07)" clip-path="url(#moonClip)"/>
+  <circle cx="75"  cy="72"  r="4"   fill="rgba(90, 122, 150, 0.09)" clip-path="url(#moonClip)"/>
 
   <!-- Limb brightening on the lit crescent edge -->
-  <path d="M 60 47 Q 38 100 60 153" fill="none" stroke="rgba(238, 240, 245, 0.25)" stroke-width="2.5" stroke-linecap="round" filter="url(#softBlur)"/>
+  <path d="M 60 47 Q 38 100 60 153" fill="none" stroke="rgba(255, 249, 240, 0.25)" stroke-width="2.5" stroke-linecap="round" filter="url(#softBlur)"/>
 
   <!-- Star companions: fine dots in a loose arc -->
-  <circle cx="162" cy="55"  r="1.2" fill="rgba(212, 184, 150, 0.9)"/>
-  <circle cx="172" cy="80"  r="0.9" fill="rgba(200, 216, 245, 0.8)"/>
-  <circle cx="165" cy="105" r="0.7" fill="rgba(200, 216, 245, 0.6)"/>
-  <circle cx="155" cy="44"  r="0.8" fill="rgba(200, 216, 245, 0.55)"/>
-  <circle cx="34"  cy="62"  r="0.9" fill="rgba(200, 216, 245, 0.5)"/>
-  <circle cx="28"  cy="140" r="0.7" fill="rgba(212, 184, 150, 0.6)"/>
-  <circle cx="148" cy="158" r="1"   fill="rgba(200, 216, 245, 0.5)"/>
-  <circle cx="50"  cy="158" r="0.7" fill="rgba(200, 216, 245, 0.4)"/>
+  <circle cx="162" cy="55"  r="1.2" fill="rgba(217, 184, 108, 0.9)"/>
+  <circle cx="172" cy="80"  r="0.9" fill="rgba(169, 216, 245, 0.8)"/>
+  <circle cx="165" cy="105" r="0.7" fill="rgba(169, 216, 245, 0.6)"/>
+  <circle cx="155" cy="44"  r="0.8" fill="rgba(169, 216, 245, 0.55)"/>
+  <circle cx="34"  cy="62"  r="0.9" fill="rgba(169, 216, 245, 0.5)"/>
+  <circle cx="28"  cy="140" r="0.7" fill="rgba(217, 184, 108, 0.6)"/>
+  <circle cx="148" cy="158" r="1"   fill="rgba(169, 216, 245, 0.5)"/>
+  <circle cx="50"  cy="158" r="0.7" fill="rgba(169, 216, 245, 0.4)"/>
 
   <!-- Champagne sparkle point at top of crescent -->
-  <polygon points="60,48 61.5,52 65.5,52 62.5,54.5 63.5,58.5 60,56 56.5,58.5 57.5,54.5 54.5,52 58.5,52" fill="rgba(212, 184, 150, 0.85)" opacity="0.9"/>
+  <polygon points="60,48 61.5,52 65.5,52 62.5,54.5 63.5,58.5 60,56 56.5,58.5 57.5,54.5 54.5,52 58.5,52" fill="rgba(217, 184, 108, 0.85)" opacity="0.9"/>
 </svg>

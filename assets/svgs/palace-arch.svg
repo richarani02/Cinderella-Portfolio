@@ -2,48 +2,48 @@
   <!-- Palace arch architectural frame - top hero decoration -->
   <!-- Central grand arch -->
   <path d="M 200 200 L 200 100 Q 200 20 300 20 Q 400 20 400 100 L 400 200"
-        fill="none" stroke="rgba(200,216,245,0.35)" stroke-width="1"/>
+        fill="none" stroke="rgba(169,216,245,0.35)" stroke-width="1"/>
 
   <!-- Left secondary arch -->
   <path d="M 80 200 L 80 130 Q 80 80 130 80 Q 180 80 180 130 L 180 200"
-        fill="none" stroke="rgba(200,216,245,0.18)" stroke-width="0.75"/>
+        fill="none" stroke="rgba(169,216,245,0.18)" stroke-width="0.75"/>
 
   <!-- Right secondary arch -->
   <path d="M 420 200 L 420 130 Q 420 80 470 80 Q 520 80 520 130 L 520 200"
-        fill="none" stroke="rgba(200,216,245,0.18)" stroke-width="0.75"/>
+        fill="none" stroke="rgba(169,216,245,0.18)" stroke-width="0.75"/>
 
   <!-- Keystone ornament at apex of main arch -->
   <rect x="293" y="14" width="14" height="14" transform="rotate(45 300 21)"
-        fill="none" stroke="rgba(212,184,150,0.6)" stroke-width="0.75"/>
+        fill="none" stroke="rgba(217,184,108,0.6)" stroke-width="0.75"/>
   <rect x="296" y="17" width="8" height="8" transform="rotate(45 300 21)"
-        fill="rgba(212,184,150,0.3)"/>
+        fill="rgba(217,184,108,0.3)"/>
 
   <!-- Left arch keystone -->
   <rect x="124" y="74" width="12" height="12" transform="rotate(45 130 80)"
-        fill="none" stroke="rgba(200,216,245,0.3)" stroke-width="0.5"/>
+        fill="none" stroke="rgba(169,216,245,0.3)" stroke-width="0.5"/>
 
   <!-- Right arch keystone -->
   <rect x="464" y="74" width="12" height="12" transform="rotate(45 470 80)"
-        fill="none" stroke="rgba(200,216,245,0.3)" stroke-width="0.5"/>
+        fill="none" stroke="rgba(169,216,245,0.3)" stroke-width="0.5"/>
 
   <!-- Horizontal cornice line connecting arches -->
-  <line x1="0" y1="200" x2="600" y2="200" stroke="rgba(200,216,245,0.12)" stroke-width="1"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="rgba(169,216,245,0.12)" stroke-width="1"/>
 
   <!-- Column pilasters - left side -->
-  <line x1="60" y1="200" x2="60" y2="155" stroke="rgba(200,216,245,0.15)" stroke-width="0.75"/>
-  <line x1="100" y1="200" x2="100" y2="155" stroke="rgba(200,216,245,0.1)" stroke-width="0.5"/>
+  <line x1="60" y1="200" x2="60" y2="155" stroke="rgba(169,216,245,0.15)" stroke-width="0.75"/>
+  <line x1="100" y1="200" x2="100" y2="155" stroke="rgba(169,216,245,0.1)" stroke-width="0.5"/>
 
   <!-- Column pilasters - right side -->
-  <line x1="500" y1="200" x2="500" y2="155" stroke="rgba(200,216,245,0.15)" stroke-width="0.75"/>
-  <line x1="540" y1="200" x2="540" y2="155" stroke="rgba(200,216,245,0.1)" stroke-width="0.5"/>
+  <line x1="500" y1="200" x2="500" y2="155" stroke="rgba(169,216,245,0.15)" stroke-width="0.75"/>
+  <line x1="540" y1="200" x2="540" y2="155" stroke="rgba(169,216,245,0.1)" stroke-width="0.5"/>
 
   <!-- Filigree detail under central arch -->
   <path d="M 240 200 L 240 160 Q 265 145 300 140 Q 335 145 360 160 L 360 200"
-        fill="none" stroke="rgba(212,184,150,0.12)" stroke-width="0.5"/>
+        fill="none" stroke="rgba(217,184,108,0.12)" stroke-width="0.5"/>
 
   <!-- Stars scattered in arch -->
-  <circle cx="300" cy="60" r="1" fill="rgba(212,184,150,0.8)"/>
-  <circle cx="260" cy="90" r="0.7" fill="rgba(200,216,245,0.6)"/>
-  <circle cx="340" cy="88" r="0.7" fill="rgba(200,216,245,0.6)"/>
-  <circle cx="300" cy="110" r="0.5" fill="rgba(200,216,245,0.4)"/>
+  <circle cx="300" cy="60" r="1" fill="rgba(217,184,108,0.8)"/>
+  <circle cx="260" cy="90" r="0.7" fill="rgba(169,216,245,0.6)"/>
+  <circle cx="340" cy="88" r="0.7" fill="rgba(169,216,245,0.6)"/>
+  <circle cx="300" cy="110" r="0.5" fill="rgba(169,216,245,0.4)"/>
 </svg>

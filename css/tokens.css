@@ -1,43 +1,55 @@
 /* ============================================================
    CINDERELLA DESIGN TOKENS
    "From Code to Magic" — Richa Rani Portfolio
+
+   Palette (2.0 — user-approved):
+     🤍 Pearl White     #FFF9F0   rgb(255, 249, 240)
+     🩵 Cinderella Blue #A9D8F5   rgb(169, 216, 245)
+     💙 Royal Blue      #4169A1   rgb(65,  105, 161)
+     ✨ Champagne Gold  #D9B86C   rgb(217, 184, 108)
+     🌙 Midnight Navy   #111A3A   rgb(17,  26,  58)
    ============================================================ */
 
 :root {
   /* ─── COLOUR PALETTE ─────────────────────────────────────── */
 
-  /* Backgrounds */
-  --color-midnight:       #06071A;   /* near-black navy — deepest bg */
-  --color-midnight-2:     #0A0D24;   /* slightly lifted bg */
-  --color-midnight-3:     #0E1230;   /* section alt bg */
+  /* Backgrounds — Midnight Navy and lifted tones */
+  --color-midnight:       #111A3A;   /* deepest bg — Midnight Navy  */
+  --color-midnight-2:     #151F44;   /* slightly lifted bg          */
+  --color-midnight-3:     #1A274E;   /* section alt bg              */
 
-  /* Surfaces (glass / elevated) */
-  --color-crystal:        rgba(200, 216, 245, 0.05);
-  --color-crystal-hover:  rgba(200, 216, 245, 0.09);
-  --color-crystal-border: rgba(200, 216, 245, 0.12);
-  --color-elevated:       rgba(14, 18, 48, 0.85);
+  /* Surfaces — Royal Blue tinted glass */
+  --color-crystal:        rgba(65, 105, 161, 0.08);
+  --color-crystal-hover:  rgba(65, 105, 161, 0.14);
+  --color-crystal-border: rgba(169, 216, 245, 0.16);
+  --color-elevated:       rgba(17, 26, 58, 0.88);
 
   /* Typography */
-  --color-ivory:          #EEF0F5;   /* primary body / headings */
-  --color-moonlight:      #C8D8F0;   /* display, pull text */
-  --color-silver:         #8A97B0;   /* secondary / captions */
-  --color-silver-2:       #64728A;   /* tertiary / placeholder */
+  --color-ivory:          #FFF9F0;   /* Pearl White — primary text  */
+  --color-moonlight:      #A9D8F5;   /* Cinderella Blue — display   */
+  --color-silver:         #8AADCC;   /* muted Cinderella Blue       */
+  --color-silver-2:       #5A7A96;   /* tertiary / placeholder      */
 
-  /* Accent */
-  --color-champagne:      #D4B896;   /* CTA, stars, highlights */
-  --color-champagne-dim:  rgba(212, 184, 150, 0.18);
-  --color-champagne-glow: rgba(212, 184, 150, 0.35);
+  /* Accent — Champagne Gold */
+  --color-champagne:      #D9B86C;
+  --color-champagne-dim:  rgba(217, 184, 108, 0.18);
+  --color-champagne-glow: rgba(217, 184, 108, 0.38);
+
+  /* Royal Blue accent (for hover states, active links) */
+  --color-royal:          #4169A1;
+  --color-royal-dim:      rgba(65, 105, 161, 0.22);
 
   /* Borders */
-  --border-fine:          1px solid rgba(200, 216, 245, 0.12);
-  --border-accent:        1px solid rgba(212, 184, 150, 0.3);
-  --border-glow:          1px solid rgba(212, 184, 150, 0.5);
+  --border-fine:          1px solid rgba(169, 216, 245, 0.14);
+  --border-accent:        1px solid rgba(217, 184, 108, 0.32);
+  --border-glow:          1px solid rgba(217, 184, 108, 0.55);
 
   /* Shadows */
-  --shadow-card:          0 4px 32px rgba(6, 7, 26, 0.6),
-                          0 1px 0 rgba(200, 216, 245, 0.06) inset;
-  --shadow-glow-champagne:0 0 24px rgba(212, 184, 150, 0.2);
-  --shadow-glow-moon:     0 0 48px rgba(200, 216, 245, 0.08);
+  --shadow-card:          0 4px 32px rgba(17, 26, 58, 0.65),
+                          0 1px 0 rgba(169, 216, 245, 0.07) inset;
+  --shadow-glow-champagne:0 0 24px rgba(217, 184, 108, 0.22);
+  --shadow-glow-moon:     0 0 48px rgba(169, 216, 245, 0.12);
+  --shadow-glow-royal:    0 0 32px rgba(65, 105, 161, 0.25);
 
   /* ─── SPACING ─────────────────────────────────────────────── */
   --space-1:  0.25rem;
@@ -63,7 +75,6 @@
   --radius-md:    4px;
   --radius-lg:    8px;
   --radius-pill:  999px;
-  /* No excessive rounded-2xl everywhere */
 
   /* ─── TYPOGRAPHY SCALE ───────────────────────────────────── */
   --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, serif;

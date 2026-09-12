@@ -130,9 +130,9 @@
       const ty  = s.y - Math.sin(rad) * SHOOT.tailLength;
 
       const grad = ctx.createLinearGradient(tx, ty, s.x, s.y);
-      grad.addColorStop(0, `rgba(212, 184, 150, 0)`);
-      grad.addColorStop(0.5, `rgba(212, 184, 150, ${s.opacity * 0.4})`);
-      grad.addColorStop(1, `rgba(238, 240, 245, ${s.opacity * 0.9})`);
+      grad.addColorStop(0, `rgba(217, 184, 108, 0)`);
+      grad.addColorStop(0.5, `rgba(217, 184, 108, ${s.opacity * 0.4})`);
+      grad.addColorStop(1, `rgba(255, 249, 240, ${s.opacity * 0.9})`);
 
       ctx.beginPath();
       ctx.moveTo(tx, ty);
@@ -144,7 +144,7 @@
       // Head sparkle
       ctx.beginPath();
       ctx.arc(s.x, s.y, 1.5, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(238, 240, 245, ${s.opacity})`;
+      ctx.fillStyle = `rgba(255, 249, 240, ${s.opacity})`;
       ctx.fill();
     });
   }
@@ -155,8 +155,8 @@
     const twinkle = Math.sin(s.phase) * s.twinkleAmp;
     const alpha   = Math.min(1, Math.max(0, s.baseOpacity + twinkle));
     const colour  = s.champagne
-      ? `rgba(212, 184, 150, ${alpha})`
-      : `rgba(200, 216, 245, ${alpha})`;
+      ? `rgba(217, 184, 108, ${alpha})`
+      : `rgba(169, 216, 245, ${alpha})`;
 
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
@@ -168,8 +168,8 @@
       const flareAlpha = alpha * 0.18;
       const flareLen   = s.radius * 3.5;
       ctx.strokeStyle  = s.champagne
-        ? `rgba(212, 184, 150, ${flareAlpha})`
-        : `rgba(200, 216, 245, ${flareAlpha})`;
+        ? `rgba(217, 184, 108, ${flareAlpha})`
+        : `rgba(169, 216, 245, ${flareAlpha})`;
       ctx.lineWidth    = 0.5;
       ctx.beginPath();
       ctx.moveTo(s.x - flareLen, s.y);
