@@ -1033,21 +1033,24 @@ body {
   animation: bgSlipFloat 8s ease-in-out infinite alternate;
 }
 
+/* Bright light-blue halo behind slipper */
 .bg-deco--slipper .bg-deco__halo {
-  inset: -35%;
+  inset: -45%;
   background: radial-gradient(
     circle,
-    rgba(65, 105, 161, 0.25) 0%,
-    rgba(169, 216, 245, 0.14) 38%,
-    rgba(217, 184, 108, 0.06) 60%,
-    transparent 78%
+    rgba(214, 240, 255, 0.55) 0%,
+    rgba(169, 216, 245, 0.35) 35%,
+    rgba(77, 168, 232, 0.18)  60%,
+    transparent 80%
   );
+  animation: bgHaloPulse 8s ease-in-out infinite alternate;
 }
 
 .bg-deco--slipper .bg-deco__img {
-  opacity: 0.45;
-  filter: drop-shadow(0 0 28px rgba(169, 216, 245, 0.45))
-          drop-shadow(0 0 60px rgba(65, 105, 161, 0.28));
+  opacity: 0.80;
+  filter: drop-shadow(0 0 20px rgba(214, 240, 255, 0.90))
+          drop-shadow(0 0 50px rgba(169, 216, 245, 0.70))
+          drop-shadow(0 0 90px rgba(77,  168, 232, 0.45));
   animation: bgSlipGlow 8s ease-in-out infinite alternate;
 }
 
@@ -1058,47 +1061,58 @@ body {
 
 @keyframes bgSlipGlow {
   0% {
-    filter: drop-shadow(0 0 25px rgba(169, 216, 245, 0.40))
-            drop-shadow(0 0 55px rgba(65, 105, 161, 0.22));
-    opacity: 0.40;
+    filter: drop-shadow(0 0 18px rgba(214, 240, 255, 0.85))
+            drop-shadow(0 0 45px rgba(169, 216, 245, 0.60))
+            drop-shadow(0 0 80px rgba(77,  168, 232, 0.38));
+    opacity: 0.72;
   }
   100% {
-    filter: drop-shadow(0 0 45px rgba(169, 216, 245, 0.65))
-            drop-shadow(0 0 90px rgba(217, 184, 108, 0.30));
-    opacity: 0.55;
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.95))
+            drop-shadow(0 0 65px rgba(169, 216, 245, 0.85))
+            drop-shadow(0 0 110px rgba(77, 168, 232, 0.55));
+    opacity: 0.92;
   }
+}
+
+@keyframes bgHaloPulse {
+  0%   { transform: scale(0.88); opacity: 0.70; }
+  100% { transform: scale(1.12); opacity: 1.00; }
 }
 
 /* ── Cinderella Silhouette — bottom-left ──────────────── */
 .bg-deco--cinderella {
   bottom: 0;
   left: -30px;
-  width: clamp(150px, 18vw, 290px);
+  width: clamp(160px, 19vw, 310px);
   animation: bgCinSway 10s ease-in-out infinite alternate;
   transform-origin: bottom center;
 }
 
+/* Bright light-blue warm halo at Cinderella's feet */
 .bg-deco--cinderella .bg-deco__halo--cin {
-  bottom: -10%;
-  left: -50%;
-  right: -50%;
-  top: -20%;
+  bottom: -15%;
+  left: -55%;
+  right: -55%;
+  top: -15%;
   background: radial-gradient(
-    circle at 50% 70%,
-    rgba(217, 184, 108, 0.20) 0%,
-    rgba(65, 105, 161, 0.14) 40%,
-    transparent 72%
+    circle at 50% 75%,
+    rgba(214, 240, 255, 0.50) 0%,
+    rgba(169, 216, 245, 0.32) 38%,
+    rgba(77,  168, 232, 0.15) 62%,
+    transparent 80%
   );
+  animation: bgHaloPulse 10s ease-in-out infinite alternate;
 }
 
 .bg-deco--cinderella .bg-deco__img {
-  opacity: 0.38;
-  filter: drop-shadow(0 0 22px rgba(169, 216, 245, 0.40))
-          drop-shadow(0 0 50px rgba(217, 184, 108, 0.25));
+  opacity: 0.75;
+  filter: drop-shadow(0 0 18px rgba(214, 240, 255, 0.88))
+          drop-shadow(0 0 45px rgba(169, 216, 245, 0.65))
+          drop-shadow(0 0 85px rgba(77,  168, 232, 0.40));
   animation: bgCinGlow 10s ease-in-out infinite alternate;
 }
 
-/* Very gentle sway — like a dress catching a breeze */
+/* Gentle dress-in-breeze sway */
 @keyframes bgCinSway {
   0%   { transform: rotate(0deg)    translateY(0);     }
   33%  { transform: rotate(0.8deg)  translateY(-6px);  }
@@ -1108,14 +1122,16 @@ body {
 
 @keyframes bgCinGlow {
   0% {
-    filter: drop-shadow(0 0 18px rgba(169, 216, 245, 0.35))
-            drop-shadow(0 0 40px rgba(217, 184, 108, 0.18));
-    opacity: 0.32;
+    filter: drop-shadow(0 0 15px rgba(214, 240, 255, 0.80))
+            drop-shadow(0 0 40px rgba(169, 216, 245, 0.58))
+            drop-shadow(0 0 75px rgba(77,  168, 232, 0.35));
+    opacity: 0.68;
   }
   100% {
-    filter: drop-shadow(0 0 35px rgba(169, 216, 245, 0.55))
-            drop-shadow(0 0 70px rgba(217, 184, 108, 0.35));
-    opacity: 0.48;
+    filter: drop-shadow(0 0 28px rgba(255, 255, 255, 0.92))
+            drop-shadow(0 0 58px rgba(169, 216, 245, 0.80))
+            drop-shadow(0 0 100px rgba(77, 168, 232, 0.50));
+    opacity: 0.88;
   }
 }
 
@@ -1131,17 +1147,18 @@ body {
     bottom: -35px;
     right: -45px;
   }
-  .bg-deco--slipper .bg-deco__img  { opacity: 0.30; }
+  .bg-deco--slipper .bg-deco__img  { opacity: 0.60; }
 
   .bg-deco--cinderella {
-    width: clamp(100px, 22vw, 180px);
+    width: clamp(110px, 24vw, 200px);
     left: -20px;
   }
-  .bg-deco--cinderella .bg-deco__img { opacity: 0.25; }
+  .bg-deco--cinderella .bg-deco__img { opacity: 0.55; }
 }
 
 @media (max-width: 480px) {
-  /* On very small screens reduce further so they don't crowd content */
-  .bg-deco--slipper    { width: 140px; opacity: 0.80; }
-  .bg-deco--cinderella { width: 90px;  opacity: 0.80; }
+  .bg-deco--slipper    { width: 140px; }
+  .bg-deco--slipper .bg-deco__img    { opacity: 0.45; }
+  .bg-deco--cinderella { width: 95px; }
+  .bg-deco--cinderella .bg-deco__img { opacity: 0.40; }
 }
