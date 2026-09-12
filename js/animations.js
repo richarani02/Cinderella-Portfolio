@@ -206,6 +206,63 @@
     });
   }
 
+  /* ─── MOUSE MOONLIGHT GLOW ────────────────────────────── */
+
+  function initMouseGlow() {
+    if (prefersReducedMotion || window.innerWidth < 1024) return;
+
+    let glow = document.getElementById('mouse-glow');
+    if (!glow) {
+      glow = document.createElement('div');
+      glow.id = 'mouse-glow';
+      glow.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(glow);
+    }
+
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let currentX = targetX;
+    let currentY = targetY;
+    let isMoving = false;
+
+    window.addEventListener('pointermove', (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+
+      if (!isMoving) {
+        isMoving = true;
+        glow.classList.add('active');
+        updatePosition();
+      }
+    }, { passive: true });
+
+    function updatePosition() {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+
+      glow.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+
+      if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+        requestAnimationFrame(updatePosition);
+      } else {
+        isMoving = false;
+      }
+    }
+  }
+
+  /* ─── CRYSTAL LIGHT SWEEP INITIALIZER ──────────────────── */
+
+  function initCrystalSweep() {
+    const sweepElements = document.querySelectorAll(
+      '.project-card, .stat-card, .skill-group, .cert-card, .mini-card, .btn'
+    );
+    sweepElements.forEach((el) => {
+      if (!el.classList.contains('crystal-sweep')) {
+        el.classList.add('crystal-sweep');
+      }
+    });
+  }
+
   /* ─── INIT ──────────────────────────────────────────────── */
 
   function init() {
@@ -215,6 +272,8 @@
     initForm();
     initMidnightEgg();
     initSkillTags();
+    initMouseGlow();
+    initCrystalSweep();
   }
 
   if (document.readyState === 'loading') {

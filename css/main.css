@@ -356,6 +356,36 @@
   opacity: 0.35;
 }
 
+/* Crystal centerpiece focal point emblem */
+.hero__crystal-center {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(120px, 20vw, 170px);
+  height: clamp(120px, 20vw, 170px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 25px rgba(212, 184, 150, 0.25));
+  animation: crystal-float 8s ease-in-out infinite alternate;
+}
+
+@keyframes crystal-float {
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.68;
+    filter: drop-shadow(0 0 35px rgba(200, 216, 245, 0.35));
+  }
+  100% {
+    transform: translateX(-50%) translateY(-12px) rotate(4deg);
+    opacity: 0.55;
+  }
+}
+
 /* Bottom architectural detail */
 .hero__floor {
   position: absolute;
@@ -1228,6 +1258,76 @@
   transform: translateX(-100%);
   animation: shimmer-sweep 3s ease-in-out infinite;
   pointer-events: none;
+}
+
+/* Enhanced Crystal Light Sweep Effect */
+.crystal-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.crystal-sweep::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(200, 216, 245, 0.06) 50%,
+    rgba(212, 184, 150, 0.12) 52%,
+    transparent 57%
+  );
+  transform: translateX(-100%) translateY(-100%) rotate(25deg);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.crystal-sweep:hover::after {
+  transform: translateX(45%) translateY(45%) rotate(25deg);
+}
+
+/* Ambient Mouse Moonlight Glow */
+#mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 550px;
+  margin-top: -275px;
+  margin-left: -275px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 216, 245, 0.05) 0%,
+    rgba(212, 184, 150, 0.02) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.6s ease-out;
+  opacity: 0;
+}
+
+#mouse-glow.active {
+  opacity: 1;
+}
+
+/* Contact Midnight Clock Decor */
+.contact__clock-decor {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 18px rgba(212, 184, 150, 0.18));
+  transition: opacity var(--dur-normal), transform var(--dur-slow) var(--ease-crystal);
+}
+
+.contact__clock-decor:hover {
+  opacity: 0.95;
+  transform: scale(1.05) rotate(2deg);
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
