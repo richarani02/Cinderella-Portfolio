@@ -73,8 +73,8 @@ Before publishing, fill in the following:
 
 ```html
 <!-- In index.html, find elements with data-social attribute: -->
-<a href="#" data-social="github" ...>  →  Replace # with your GitHub URL
-<a href="#" data-social="linkedin" ...>  →  Replace # with your LinkedIn URL
+<a href="https://github.com/richarani02" data-social="github" ...>  →  Replace # with your GitHub URL
+<a href="https://www.linkedin.com/in/richa-rani-957627429?utm_source=share_via&utm_content=profile&utm_medium=member_android" data-social="linkedin" ...>  →  Replace # with your LinkedIn URL
 ```
 
 ---
